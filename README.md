@@ -1,25 +1,28 @@
 Universal Résumé Template
 ---------
 
+`master`: code-focused resume
+`alt`: general resume
+
 Minimal and formal résumé (CV) website template for print, mobile, and desktop. The proportions are the same on the screen and paper. Built with amazing [Tailwind CSS](https://tailwindcss.com/).
 
-Letter Size Demo: https://universal-resume.netlify.com/  
-A4 Size Demo: https://universal-resume-a4.netlify.com/  
-Multiple Pages Demo: https://universal-resume-pages.netlify.com/  
+Letter Size Demo: https://universal-resume.netlify.com/
+A4 Size Demo: https://universal-resume-a4.netlify.com/
+Multiple Pages Demo: https://universal-resume-pages.netlify.com/
 Mobile Demo: https://www.responsinator.com/?url=https%3A%2F%2Funiversal-resume-pages.netlify.com%2F
 
 **Note:** Licensed under CC NC-SA 1.0. In short, your may use it for your résumé, but not for commercial purposes.
 
-**How to print or save it as PDF?**  
+**How to print or save it as PDF?**
 Right-click → Print.
 
-**Does it support A4 and Letter paper sizes?**  
+**Does it support A4 and Letter paper sizes?**
 Yes, replace all `-letter` classes with `-a4`, and uncomment specified code blocks.
 
-**What font does it use?**  
+**What font does it use?**
 Per [Butterick’s](https://practicaltypography.com/) free font recommendations, I’ve chosen IBM Plex.
 
-**Why it’s made?**  
+**Why it’s made?**
 I couldn’t find any formal or professional résumé (CV) website with good typography, that is optimized for print, pdf, and mobile. Also, researching what recruiters want, my priorities were fast scanning time and all content to fit on one page.
 
 How to run it
@@ -95,7 +98,7 @@ Printing
 
 ### Chrome
 
-Right-click → Print.  
+Right-click → Print.
 Also, choose the **Save as PDF** option if needed.
 
 By expanding **More Settings**, change **Page Size** to A4 or Letter.
@@ -136,12 +139,12 @@ Always happy to hear from you!
 License
 ---------
 
-NonCommercial-ShareAlike 1.0 Generic (CC NC-SA 1.0)  
+NonCommercial-ShareAlike 1.0 Generic (CC NC-SA 1.0)
 https://creativecommons.org/licenses/nc-sa/1.0/
 
 ### You are free to:
 
-Share — copy and redistribute the material in any medium or format  
+Share — copy and redistribute the material in any medium or format
 
 Adapt — remix, transform, and build upon the material
 
