@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Luke Deen Taylor — Resume</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Luke Deen Taylor</h1>
+      </header>
+
+      <div class="columns">
+        <section>
+          <h2>About</h2>
+
+          {{#each about as |aboutBlock|}}
+            <article>
+              <header>
+                <h3>{{aboutBlock.title}}</h3>
+                <p class="subhead">Since {{getDateComponent aboutBlock.originDate 'year'}}</p>
+              </header>
+              <p>
+                {{aboutBlock.description}}
+              </p>
+            </article>
+          {{/each}}
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
