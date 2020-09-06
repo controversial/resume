@@ -22,14 +22,14 @@
         <section id="about">
           <h2>About</h2>
 
-          {{#each about as |aboutBlock|}}
+          {{#each about as |aboutItem|}}
             <article>
               <header>
-                <h3>{{aboutBlock.title}}</h3>
-                <p class="subhead">Since {{getDateComponent aboutBlock.originDate 'year'}}</p>
+                <h3>{{aboutItem.title}}</h3>
+                <p class="subhead">Since {{getDateComponent aboutItem.originDate 'year'}}</p>
               </header>
               <p>
-                {{aboutBlock.description}}
+                {{aboutItem.description}}
               </p>
             </article>
           {{/each}}
@@ -40,25 +40,23 @@
         <section id="experience">
           <h2>Experience</h2>
 
-          {{#each experience as |experienceBlock|}}
+          {{#each experience as |experienceItem|}}
             <article>
               <header>
-                <h3>{{experienceBlock.employer}}</h3>
+                <h3>{{experienceItem.employer}}</h3>
                 <p class="subhead">
                   {{
                     dateRange
-                    experienceBlock.startDate experienceBlock.endDate
-                    experienceBlock.datePrecision
+                    experienceItem.startDate experienceItem.endDate
+                    experienceItem.datePrecision
                   }} | {{experienceBlock.position}}
                 </p>
               </header>
-              <p>
-                <ul>
-                  {{#each experienceBlock.tasks as |task|}}
-                    <li>{{task}}</li>
-                  {{/each}}
-                </ul>
-              </p>
+              <ul>
+                {{#each experienceItem.tasks as |task|}}
+                  <li>{{task}}</li>
+                {{/each}}
+              </ul>
             </article>
           {{/each}}
         </section>
@@ -100,6 +98,25 @@
                   {{educationItem.description}}
                 </p>
               </header>
+            </article>
+          {{/each}}
+        </section>
+
+        {{!-- Skills --}}
+
+        <section id="skills">
+          <h2>Skills</h2>
+          {{#each skills as |skillBlock|}}
+            <article>
+              <header>
+                <h3>{{skillBlock.title}}</h3>
+              </header>
+              <p>{{skillBlock.description}}</p>
+              <ul class="tags">
+                {{#each skillBlock.tags as |tag|}}
+                  <li>{{tag}}</li>
+                {{/each}}
+              </ul>
             </article>
           {{/each}}
         </section>
