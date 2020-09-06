@@ -37,3 +37,32 @@ test('formatDateRange works properly', () => {
   expect(makeRange('2020-01-01', '2020-12-31')).toBe('2020');
   expect(makeRange('2020-01-01', '2020-01-01')).toBe('2020');
 });
+
+test('formatDateRange handles missing start/end dates', () => {
+  // Missing start date
+  expect(formatDateRange(undefined, new Date('2020-01-01'), 'day')).toBe('Until Jan 1, 2020');
+  // Missing end date
+  expect(formatDateRange(new Date('2020-01-01'), undefined, 'day')).toBe('Jan 1, 2020–Present');
+});
+
+test('formatDateRange works properly for multiple ranges', () => {
+  expect(formatDateRange(
+    [new Date('2018-01-01'), new Date('2020-03-14')],
+    [new Date('2019-04-20'), new Date('2020-03-15')],
+    'day',
+  )).toBe('Jan 1, 2018–Apr 20, 2019; Mar 14–15, 2020');
+  expect(formatDateRange(
+    [new Date('2018-01-01'), new Date('2020-03-14')],
+    [new Date('2019-04-20'), new Date('2020-03-15')],
+    'month',
+  )).toBe('Jan 2018–Apr 2019, Mar 2020');
+});
+
+test('formatDateRange returns an empty string for empty data', () => {
+  expect(formatDateRange(undefined, undefined, 'day')).toBe('');
+  expect(formatDateRange(undefined, undefined, 'month')).toBe('');
+  expect(formatDateRange(undefined, undefined, 'year')).toBe('');
+  expect(formatDateRange([], [], 'day')).toBe('');
+  expect(formatDateRange([], [], 'month')).toBe('');
+  expect(formatDateRange([], [], 'year')).toBe('');
+});
