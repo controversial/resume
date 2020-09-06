@@ -34,6 +34,7 @@ export default {
   experience: [
     {
       employer: 'Johns Hopkins Coronavirus Resource Center',
+      position: 'Developer',
       startDate: new Date('2020-05-06'),
       endDate: new Date('2020-09-04'),
       tasks: [
@@ -46,6 +47,7 @@ export default {
     },
     {
       employer: 'Tufts University Digital Services',
+      position: 'Developer',
       startDate: new Date('2019-10-07'),
       endDate: new Date('2019-04-30'),
       tasks: [
@@ -56,6 +58,7 @@ export default {
     },
     {
       employer: 'Moonfarmer',
+      position: 'Junior Web Developer',
       startDate: [new Date('2018-06-20'), new Date('2019-06-18')],
       endDate: [new Date('2018-08-29'), new Date('2019-08-23')],
       tasks: [
@@ -66,6 +69,7 @@ export default {
     },
     {
       employer: 'sleep later',
+      position: 'Freelance Developer',
       startDate: new Date('2018-05-01'),
       endDate: new Date('2018-08-01'),
       tasks: [
@@ -75,6 +79,7 @@ export default {
     },
     {
       employer: 'Newburgh Armory Unity Center',
+      position: 'Classroom Assistant',
       startDate: new Date('2017-01-01'),
       endDate: new Date('2019-01-01'),
       datePrecision: 'year',
@@ -84,6 +89,7 @@ export default {
     },
     {
       employer: 'AppMobi Inc.',
+      position: 'Summer Intern',
       startDate: new Date('2016-06-21'),
       endDate: new Date('2016-08-30'),
       tasks: [

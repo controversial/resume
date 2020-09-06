@@ -17,6 +17,8 @@
       </header>
 
       <div class="columns">
+        {{!-- About --}}
+
         <section>
           <h2>About</h2>
 
@@ -28,6 +30,34 @@
               </header>
               <p>
                 {{aboutBlock.description}}
+              </p>
+            </article>
+          {{/each}}
+        </section>
+
+        {{!-- Experience --}}
+
+        <section>
+          <h2>Experience</h2>
+
+          {{#each experience as |experienceBlock|}}
+            <article>
+              <header>
+                <h3>{{experienceBlock.employer}}</h3>
+                <p class="subhead">
+                  {{
+                    dateRange
+                    experienceBlock.startDate experienceBlock.endDate
+                    experienceBlock.datePrecision
+                  }} | {{experienceBlock.position}}
+                </p>
+              </header>
+              <p>
+                <ul>
+                  {{#each experienceBlock.tasks as |task|}}
+                    <li>{{task}}</li>
+                  {{/each}}
+                </ul>
               </p>
             </article>
           {{/each}}
