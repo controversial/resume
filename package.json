@@ -13,6 +13,7 @@
   "author": "Luke Deen Taylor",
   "license": "MIT",
   "dependencies": {
+    "globby": "^11.0.1",
     "handlebars": "^4.7.6"
   },
   "devDependencies": {
