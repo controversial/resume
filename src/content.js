@@ -4,31 +4,29 @@ export default {
       title: 'Front-End Developer',
       originDate: new Date('2015-01-01'),
       description: `
-        I started working with JavaScript and CSS in high school for fun. Since
-        then, I've built and worked on many large-scale web apps and static
-        sites. Today, I pair expertise in Vue and React with skills in design
-        and back-end development to bring projects I'm passionate about to life
-        online.
+        I started working with JavaScript and CSS in high school for fun. Since then, I've built and
+        worked on many large-scale web apps and static sites. Today, I pair expertise in Vue and
+        React with skills in design and back-end development to bring projects I'm passionate about
+        to life online.
       `,
     },
     {
       title: 'UI/UX Designer',
       originDate: new Date('2016-01-01'),
       description: `
-        While initially I viewed design only as a necessary step towards making
-        my creations accessible to others, I quickly developed a passion for
-        interface design as I practiced. I find it satisfying to create and
-        execute a beautiful interface to accompany everything I build.
+        While initially I viewed design only as a necessary step towards making my creations
+        accessible to others, I quickly developed a passion for interface design as I practiced.
+        I find it satisfying to create and execute a beautiful interface to accompany everything I
+        build.
       `,
     },
     {
       title: 'Code Enthusiast',
       originDate: new Date('2014-01-01'),
       description: `
-        I picked up Python in middle school to satisfy my love for creation
-        through technology. I explored areas like generative art and computer
-        vision in Python before turning to focus on web technologies in order to
-        share my creations with the world.
+        I picked up Python in middle school to satisfy my love for creation through technology. I
+        explored areas like generative art and computer vision in Python before turning to focus on
+        web technologies in order to share my creations with the world.
       `,
     },
   ],
@@ -102,10 +100,9 @@ export default {
       endDate: new Date('2019-01-01'),
       tags: ['Vue', 'Express', 'Docker'],
       description: `
-        A web app for computer science students and classrooms that presents a
-        set of original practice problems in a custom online development
-        environment. Includes classroom features that enable student
-        collaboration as well as tools for instructors to track student progress
+        A web app for computer science students and classrooms that presents a set of original
+        practice problems in a custom online development environment. Includes classroom features
+        that enable student collaboration as well as tools for instructors to track student progress
         and content knowledge.
       `,
     },
@@ -116,10 +113,9 @@ export default {
       endDate: new Date('2016-12-31'),
       tags: ['JavaScript', 'Node.js', 'Flask'],
       description: `
-        A web app that allows users to explore the world’s knowledge based on
-        related topics. Leverages Wikipedia's API to parse articles and extract
-        “related concepts” from relevant page links in order to build a content
-        graph.
+        A web app that allows users to explore the world’s knowledge based on related topics.
+        Leverages Wikipedia's API to parse articles and extract “related concepts” from relevant
+        page links in order to build a content graph.
       `,
     },
     {
@@ -129,10 +125,9 @@ export default {
       endDate: new Date('2015-12-01'),
       tags: ['Python'],
       description: `
-        An interactive iOS application to solve paper mazes on a device’s camera
-        using computer vision. I implemented all of the computer vision and
-        pathfinding algorithms myself using raw pixel data from the input
-        images.
+        An interactive iOS application to solve paper mazes on a device’s camera using computer
+        vision. I implemented all of the computer vision and pathfinding algorithms myself using raw
+        pixel data from the input images.
       `,
     },
   ],
@@ -169,22 +164,20 @@ export default {
     {
       title: 'UI/UX Design',
       description: `
-        Experienced in the use of Sketch and similar tools to create interface
-        designs for web apps which are simultaneously beautiful, responsive, and
-        intuitive.
+        Experienced in the use of Sketch and similar tools to create interface designs for web apps
+        which are simultaneously beautiful, responsive, and intuitive.
       `,
       // prettier-ignore
       tags: [
-        'Sketch', 'Figma', 'CSS layout', 'CSS animation', 'Photoshop',
-        'Illustrator', 'Affinity',
+        'Sketch', 'Figma', 'CSS layout', 'CSS animation', 'Photoshop', 'Illustrator', 'Affinity',
       ],
     },
     {
       title: 'Other technologies',
       // prettier-ignore
       tags: [
-        'HTML', 'CSS', 'SASS', 'Python', 'Flask', 'C++', 'MongoDB', 'GraphQL',
-        'Docker', 'Nginx', 'Git', 'GitHub', 'Asana', 'Jira',
+        'HTML', 'CSS', 'SASS', 'Python', 'Flask', 'C++', 'MongoDB', 'GraphQL', 'Docker', 'Nginx',
+        'Git', 'GitHub', 'Asana', 'Jira',
       ],
     },
   ],
