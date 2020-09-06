@@ -19,7 +19,7 @@
       <div class="columns">
         {{!-- About --}}
 
-        <section>
+        <section id="about">
           <h2>About</h2>
 
           {{#each about as |aboutBlock|}}
@@ -37,7 +37,7 @@
 
         {{!-- Experience --}}
 
-        <section>
+        <section id="experience">
           <h2>Experience</h2>
 
           {{#each experience as |experienceBlock|}}
@@ -58,6 +58,29 @@
                     <li>{{task}}</li>
                   {{/each}}
                 </ul>
+              </p>
+            </article>
+          {{/each}}
+        </section>
+
+        {{!-- Work --}}
+
+        <section id="work">
+          <h2>Work</h2>
+          {{#each work as |project|}}
+            <article>
+              <header>
+                <h3><a href="{{project.href}}">{{project.title}}</a></h3>
+                <p class="subhead">
+                  {{dateRange project.startDate project.endDate 'year'}}
+                  |
+                  {{#each project.tags as |tag|}}
+                    {{tag}}{{#unless @last}}, {{/unless}}
+                  {{/each}}
+                </p>
+              </header>
+              <p>
+                {{project.description}}
               </p>
             </article>
           {{/each}}
