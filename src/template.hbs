@@ -85,6 +85,24 @@
             </article>
           {{/each}}
         </section>
+
+        {{!-- Education --}}
+
+        <section id="education">
+          <h2>Education</h2>
+          {{#each education as |educationItem|}}
+            <article>
+              <header>
+                <h3>{{educationItem.institution}}</h3>
+                <p>
+                  {{dateRange educationItem.startDate educationItem.endDate 'year'}}
+                  {{#if educationItem.description}} | {{/if}}
+                  {{educationItem.description}}
+                </p>
+              </header>
+            </article>
+          {{/each}}
+        </section>
       </div>
     </main>
   </body>
