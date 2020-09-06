@@ -37,13 +37,16 @@ export function formatDateRange(startDate, endDate, precision = 'month') {
   const ranges = startDates.map((_, i) => [startDates[i], endDates[i]]);
   const rangeStrings = ranges.map(([start, end]) => {
     // If there's no end date, the range is through present
-    if (!end) {
-      return `${start.toLocaleDateString('en-US', {
+    if (!start || !end) {
+      const formatSingleDate = (d) => d.toLocaleDateString('en-US', {
         timeZone: 'UTC',
         year: 'numeric',
         ...(['month', 'day'].includes(precision) && { month: 'short' }),
         ...(precision === 'day' && { day: 'numeric' }),
-      })}—Present`;
+      });
+      if (start) return formatRange(formatSingleDate(start), 'Present');
+      if (end) return `Until ${formatSingleDate(end)}`;
+      return '';
     }
     // If there is an end date, we need fancy logic
     const day1 = getDateComponent(start, 'day');
@@ -79,7 +82,7 @@ export function formatDateRange(startDate, endDate, precision = 'month') {
     //   - 2019–2020
     //   - 2020
     return formatRange(year1, year2);
-  });
+  }).filter((s) => !!s);
   // Use semicolons as the separator if any of the range strings contains a comma.
   const separator = rangeStrings.some((s) => s.includes(',')) ? '; ' : ', ';
   return rangeStrings.join(separator);
