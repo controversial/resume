@@ -13,7 +13,7 @@ html, body {
   --gray-dark: #4a5568;
   --gray-med: #718096;
   --gray-light: #a0aec0;
-  --gray-tint: #f2f6fa;
+  --gray-tint: #f0f4fa;
 
   color: var(--gray-dark);
 }
@@ -89,6 +89,23 @@ a {
   text-decoration: none;
 }
 
+ul.tags {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  li {
+    color: var(--gray-dark);
+    background: var(--gray-tint);
+    font-size: 1rem;
+    line-height: 1.625;
+    padding: 0 .75em;
+    margin-right: .4rem;
+  }
+}
 
 #experience {
   ul {
