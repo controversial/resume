@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "scripts": {
-    "test": "npx --node-arg=--experimental-vm-modules jest",
+    "test": "npx --node-arg=--experimental-vm-modules --node-arg=--no-warnings jest",
     "build": "node build",
     "watch": "nodemon build"
   },
