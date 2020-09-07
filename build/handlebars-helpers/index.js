@@ -14,7 +14,7 @@ Handlebars.registerHelper('displayLink', (value, type) => {
     let number = Handlebars.escapeExpression(value.replace(/\s/g, ''));
     if (number.length === 10) number = `+1${number}`;
     out = `<a href="tel:${number}">${escapedValue}</a>`;
-  } else return '';
+  } else return value;
   return new Handlebars.SafeString(out);
 });
 
