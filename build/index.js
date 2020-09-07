@@ -3,14 +3,13 @@ import { promises as fs, existsSync } from 'fs';
 import { promisify } from 'util';
 import glob from 'globby';
 
+import { srcDir, outDir } from './paths.js';
+
 import sass from 'node-sass';
 import Handlebars from 'handlebars';
 import './handlebars-helpers/index.js';
 
 const compileSass = promisify(sass.render);
-
-const srcDir = path.resolve(process.cwd(), 'src');
-const outDir = path.resolve(process.cwd(), 'out');
 
 
 // 1) Generate output

@@ -1,11 +1,10 @@
 import Handlebars from 'handlebars';
 import { getDateComponent, formatDateRange } from './dates.js';
 
-// Date helpers
-Handlebars.registerHelper('getDateComponent', getDateComponent);
-Handlebars.registerHelper('dateRange', formatDateRange);
+import fs from 'fs';
+import path from 'path';
+import { srcDir } from '../paths.js';
 
-// Misc
 Handlebars.registerHelper('displayLink', (value, type) => {
   const escapedValue = Handlebars.escapeExpression(value);
   let out;
@@ -18,3 +17,13 @@ Handlebars.registerHelper('displayLink', (value, type) => {
   } else return '';
   return new Handlebars.SafeString(out);
 });
+
+Handlebars.registerHelper('icon', (name) => {
+  const iconPath = path.join(srcDir, 'icons', `${name}.svg`);
+  const markup = fs.readFileSync(iconPath, 'utf-8');
+  return new Handlebars.SafeString(markup);
+});
+
+// Date helpers
+Handlebars.registerHelper('getDateComponent', getDateComponent);
+Handlebars.registerHelper('dateRange', formatDateRange);

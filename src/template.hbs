@@ -95,11 +95,7 @@
               <header>
                 <h3>{{educationItem.institution}}</h3>
                 <p class="subhead">
-                  {{#if educationItem.datePrecision}}
-                    {{dateRange educationItem.startDate educationItem.endDate educationItem.datePrecision}}
-                  {{else}}
-                    {{dateRange educationItem.startDate educationItem.endDate 'year'}}
-                  {{/if}}
+                  {{dateRange educationItem.startDate educationItem.endDate 'year'}}
                   {{#if educationItem.description}} | {{/if}}
                   {{educationItem.description}}
                 </p>
@@ -132,12 +128,14 @@
         <section id="contact">
           <h2>Contact</h2>
 
-          {{#each contact as |contactItem|}}
-            <li>
-              {{!-- TODO: icon --}}
-              {{displayLink value type}}
-            </li>
-          {{/each}}
+          <ul>
+            {{#each contact as |contactItem|}}
+              <li>
+                {{icon type}}
+                {{displayLink value type}}
+              </li>
+            {{/each}}
+          </ul>
         </section>
       </div>
     </main>
