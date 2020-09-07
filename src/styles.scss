@@ -159,3 +159,20 @@ ul.tags {
   }
 }
 
+// Print styles
+
+@media print {
+  :root {
+    font-size: 10.5px;
+  }
+
+  main {
+    max-width: none;
+    padding: 3rem 8rem 0;
+  }
+}
+
+@page {
+  margin: 0;
+  size: A4;
+}
