@@ -22,9 +22,9 @@ export default {
       title: 'Code Enthusiast',
       originDate: new Date('2013-01-01'),
       description: `
-        I’ve been interested in creating with code since I was a small kid spending hours sunk
-        deep in LEGO robotics projects. I picked up Python in middle school, and later, I turned to
-        the web to share my creations with the world.
+        I’ve been interested in creating with code since I was a little kid spending hours deep in
+        LEGO robotics projects. I picked up Python in middle school, and later, I turned to the web
+        to share my creations with the world.
       `,
     },
   ],
@@ -46,7 +46,7 @@ export default {
       employer: 'Tufts University Digital Services',
       position: 'Developer',
       startDate: new Date('2019-10-07'),
-      endDate: new Date('2019-04-30'),
+      endDate: new Date('2020-04-30'),
       tasks: [
         'Managed multiple weekly alumni outreach campaigns.',
         'Developed, revised, and sent HTML emails with good cross-client support to a large audience.',
@@ -183,9 +183,9 @@ export default {
 
   contact: [
     { type: 'link', value: 'luke.deentaylor.com' },
+    { type: 'email', value: 'luke@deentaylor.com' },
     { type: 'link', value: 'github.com/controversial' },
     { type: 'link', value: 'dribbble.com/controversial' },
-    { type: 'email', value: 'luke@deentaylor.com' },
     { type: 'tel', value: '845 943 9304' },
   ],
 };
