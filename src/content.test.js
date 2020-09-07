@@ -33,7 +33,7 @@ test('startDates come before endDates', () => {
 
 test('Longform content ends with a period', () => {
   const longContent = [
-    ...content.about.map((a) => a.description),
+    content.about,
     ...content.experience.map((e) => e.tasks),
     ...content.work.map((w) => w.description),
     ...content.skills.map((s) => s.description),

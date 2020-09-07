@@ -22,17 +22,7 @@
         <section id="about">
           <h2>About</h2>
 
-          {{#each about as |aboutItem|}}
-            <article>
-              <header>
-                <h3>{{aboutItem.title}}</h3>
-                <p class="subhead">Since {{getDateComponent aboutItem.originDate 'year'}}</p>
-              </header>
-              <p>
-                {{aboutItem.description}}
-              </p>
-            </article>
-          {{/each}}
+          <p>{{about}}</p>
         </section>
 
         {{!-- Experience --}}

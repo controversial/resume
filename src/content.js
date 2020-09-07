@@ -1,33 +1,12 @@
 export default {
-  about: [
-    {
-      title: 'Front-End Developer',
-      originDate: new Date('2015-01-01'),
-      description: `
-        I first started working with JavaScript and CSS in high school for fun. Since then, I’ve
-        developed my skills and mastered of modern web development. Today, I pair this expertise
-        with skills in design and back-end development to bring projects I'm passionate about to
-        life online.
-      `,
-    },
-    {
-      title: 'UI/UX Designer',
-      originDate: new Date('2016-01-01'),
-      description: `
-        I take great pride in polishing every experience I build with careful interface design and
-        painstaking attention to detail.
-      `,
-    },
-    {
-      title: 'Code Enthusiast',
-      originDate: new Date('2013-01-01'),
-      description: `
-        I’ve been interested in creating with code since I was a little kid spending hours deep in
-        LEGO robotics projects. I picked up Python in middle school, and later, I turned to the web
-        to share my creations with the world.
-      `,
-    },
-  ],
+  about: `
+    I’ve been interested in creating with code since my first LEGO robotics projects as a little
+    kid. I picked up Python in middle school, and soon turned to the web to share my creations with
+    the world. In high schoool, I started working with JavaScript and CSS for fun, and quickly
+    expanded my skills and mastered modern web development. Today, I pair this expertise with
+    skills in interface design and back-end development to bring projects I'm passionate about to
+    life online.
+  `,
 
   experience: [
     {
