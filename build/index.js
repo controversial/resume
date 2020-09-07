@@ -5,32 +5,16 @@ import glob from 'globby';
 
 import sass from 'node-sass';
 import Handlebars from 'handlebars';
-
-import { getDateComponent, formatDateRange } from './dates.js';
+import './handlebars-helpers/index.js';
 
 const compileSass = promisify(sass.render);
 
 const srcDir = path.resolve(process.cwd(), 'src');
 const outDir = path.resolve(process.cwd(), 'out');
 
-// Date helpers
-Handlebars.registerHelper('getDateComponent', getDateComponent);
-Handlebars.registerHelper('dateRange', formatDateRange);
-// Misc
-Handlebars.registerHelper('displayLink', (value, type) => {
-  const escapedValue = Handlebars.escapeExpression(value);
-  let out;
-  if (type === 'link') out = `<a href="https://${escapedValue}">${escapedValue}</a>`;
-  else if (type === 'email') out = `<a href="mailto:${escapedValue}">${escapedValue}</a>`;
-  else if (type === 'tel') {
-    let number = Handlebars.escapeExpression(value.replace(/\s/g, ''));
-    if (number.length === 10) number = `+1${number}`;
-    out = `<a href="tel:${number}">${escapedValue}</a>`;
-  } else return '';
-  return new Handlebars.SafeString(out);
-});
 
 // 1) Generate output
+
 Promise.all([
   // a) Compile HTML
   (async () => {
@@ -48,6 +32,7 @@ Promise.all([
 ])
 
 // 2) Write output to disk
+
   .then(([html, { css }, filesToCopy]) => Promise.all([
     // a) Write HTML
     fs.writeFile(path.join(outDir, 'index.html'), html, 'utf-8'),
