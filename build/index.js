@@ -1,10 +1,14 @@
 import path from 'path';
 import { promises as fs } from 'fs';
+import { promisify } from 'util';
 import glob from 'globby';
 
+import sass from 'node-sass';
 import Handlebars from 'handlebars';
 
 import { getDateComponent, formatDateRange } from './dates.js';
+
+const compileSass = promisify(sass.render);
 
 const srcDir = path.resolve(process.cwd(), 'src');
 const outDir = path.resolve(process.cwd(), 'out');
@@ -28,7 +32,7 @@ Handlebars.registerHelper('displayLink', (value, type) => {
 
 // 1) Generate output
 Promise.all([
-  // b) Compile HTML
+  // a) Compile HTML
   (async () => {
     const [content, templateFunc] = await Promise.all([
       import('../src/content.js').then((module) => module.default),
@@ -37,15 +41,19 @@ Promise.all([
     ]);
     return templateFunc(content);
   })(),
-  // a) Get supporting files
-  glob('*.{css,svg}', { cwd: srcDir, onlyFiles: true }),
+  // b) Compile SASS
+  compileSass({ file: path.join(srcDir, 'styles.scss') }),
+  // c) Get supporting files
+  glob('*.svg', { cwd: srcDir, onlyFiles: true }),
 ])
 
 // 2) Write output to disk
-  .then(([html, filesToCopy]) => Promise.all([
+  .then(([html, { css }, filesToCopy]) => Promise.all([
     // a) Write HTML
     fs.writeFile(path.join(outDir, 'index.html'), html, 'utf-8'),
-    // b) Write supporting files
+    // b) Write CSS
+    fs.writeFile(path.join(outDir, 'styles.css'), css, 'utf-8'),
+    // c) Write supporting files
     ...filesToCopy.map((f) => fs.copyFile(
       path.join(srcDir, f),
       path.join(outDir, f),
