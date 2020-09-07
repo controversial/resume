@@ -11,13 +11,14 @@ export default {
   experience: [
     {
       employer: 'Johns Hopkins Coronavirus Resource Center',
-      position: 'Developer',
+      position: 'Full-Stack Software Engineer',
       startDate: new Date('2020-05-06'),
       endDate: new Date('2020-09-04'),
       tasks: [
-        'Maintained and expanded a crucial public health resource drawing 15 million weekly visitors.',
-        'Created engagements that are cited daily in the Washington Post, NPR, and others.',
-        'Led an effort to centralize data processing strategy; single-handedly developed a bespoke data science toolkit upon which the site’s primary engagements are built.',
+        'Worked as one of three core developers maintaining and expanding coronavirus.jhu.edu, a crucial public health resource drawing 15 million weekly visitors.',
+        'Created rich visual data displays that are cited daily by The Washington Post, NPR and others.',
+        'Developed core components of a new design system as part of a major site redesign.',
+        'Led effort to centralize data processing strategy; single-handedly developed Python data science toolkit upon which the site’s primary engagements are built.',
         'Oversaw and led development on a full rewrite of the site in Next.js.',
       ],
     },
@@ -28,7 +29,7 @@ export default {
       endDate: new Date('2020-04-30'),
       tasks: [
         'Managed multiple weekly alumni outreach campaigns.',
-        'Developed, revised, and sent HTML emails with good cross-client support to a large audience.',
+        'Developed, revised, and sent HTML emails with cross-client support to a large audience.',
       ],
     },
     {
@@ -37,8 +38,9 @@ export default {
       startDate: [new Date('2018-06-20'), new Date('2019-06-18')],
       endDate: [new Date('2018-08-29'), new Date('2019-08-23')],
       tasks: [
-        'Worked on a team to develop large-scale React apps and meet deadlines.',
+        'Worked on developer team building large-scale React apps and meeting deadlines.',
         'Switched rapidly between multiple concurrent agile client projects, tracking billable hours on each.',
+        'Wrote extensive internal technical documentation, as well as public-facing technical blog articles.',
       ],
     },
     {
@@ -47,7 +49,7 @@ export default {
       startDate: new Date('2018-05-01'),
       endDate: new Date('2018-08-01'),
       tasks: [
-        'Designed and built a fully custom e-commerce front-end, back-end, and CMS a local clothing startup.',
+        'Designed and built a fully custom e-commerce front-end, back-end, and CMS for a local clothing startup.',
       ],
     },
     {
@@ -77,10 +79,9 @@ export default {
       endDate: new Date('2019-01-01'),
       tags: ['Vue', 'Express', 'Docker'],
       description: `
-        A web app for computer science students and classrooms that presents a set of original
-        practice problems in a custom online development environment. Includes classroom features
-        that enable student collaboration as well as tools for instructors to track student progress
-        and content knowledge.
+        High school independent study project designing and developing a web app for computer
+        science students and classrooms that presents a set of original practice problems in a
+        custom online development environment.
       `,
     },
     {
@@ -90,9 +91,9 @@ export default {
       endDate: new Date('2016-12-31'),
       tags: ['JavaScript', 'Node.js', 'Flask'],
       description: `
-        A web app that allows users to explore the world’s knowledge based on related topics.
-        Leverages Wikipedia's API to parse articles and extract “related concepts” from relevant
-        page links in order to build a content graph.
+        Web app allowing users to explore the world’s knowledge based on related topics.
+        Leverages Wikipedia API to parse articles and extract “related concepts” from relevant page
+        links in order to build a content graph.
       `,
     },
     {
@@ -102,9 +103,8 @@ export default {
       endDate: new Date('2015-12-01'),
       tags: ['Python'],
       description: `
-        An interactive iOS application to solve paper mazes on a device’s camera using computer
-        vision. I implemented all of the computer vision and pathfinding algorithms myself using raw
-        pixel data from the input images.
+        Interactive iOS application that solves paper mazes on a device’s camera, using my own
+        implementations of computer vision and pathfinding algorithms.
       `,
     },
   ],
@@ -134,8 +134,8 @@ export default {
     {
       title: 'JavaScript',
       description: `
-        Mastery in modern JavaScript and web programming with “vanilla”
-        JavaScript as well as with React and Vue.
+        Expert-level development skills in web programming with “vanilla” JavaScript as well as with
+        React and Vue.
       `,
       tags: ['ES6+', 'React', 'Next.js', 'Vue', 'Node', 'Express'],
     },
