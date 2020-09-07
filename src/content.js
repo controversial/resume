@@ -4,29 +4,27 @@ export default {
       title: 'Front-End Developer',
       originDate: new Date('2015-01-01'),
       description: `
-        I started working with JavaScript and CSS in high school for fun. Since then, I've built and
-        worked on many large-scale web apps and static sites. Today, I pair expertise in Vue and
-        React with skills in design and back-end development to bring projects I'm passionate about
-        to life online.
+        I first started working with JavaScript and CSS in high school for fun. Since then, I’ve
+        developed my skills and mastered of modern web development. Today, I pair this expertise
+        with skills in design and back-end development to bring projects I'm passionate about to
+        life online.
       `,
     },
     {
       title: 'UI/UX Designer',
       originDate: new Date('2016-01-01'),
       description: `
-        While initially I viewed design only as a necessary step towards making my creations
-        accessible to others, I quickly developed a passion for interface design as I practiced.
-        I find it satisfying to create and execute a beautiful interface to accompany everything I
-        build.
+        I take great pride in polishing every experience I build with careful interface design and
+        painstaking attention to detail.
       `,
     },
     {
       title: 'Code Enthusiast',
-      originDate: new Date('2014-01-01'),
+      originDate: new Date('2013-01-01'),
       description: `
-        I picked up Python in middle school to satisfy my love for creation through technology. I
-        explored areas like generative art and computer vision in Python before turning to focus on
-        web technologies in order to share my creations with the world.
+        I’ve been interested in creating with code since I was a small kid spending hours sunk
+        deep in LEGO robotics projects. I picked up Python in middle school, and later, I turned to
+        the web to share my creations with the world.
       `,
     },
   ],
@@ -38,11 +36,10 @@ export default {
       startDate: new Date('2020-05-06'),
       endDate: new Date('2020-09-04'),
       tasks: [
-        'Served on a core team of three developers maintaining and expanding a crucial public health resource drawing 15 million weekly visitors.',
+        'Maintained and expanded a crucial public health resource drawing 15 million weekly visitors.',
         'Created engagements that are cited daily in the Washington Post, NPR, and others.',
-        'Led an effort to centralize data science processes; single-handedly wrote and adopted a bespoke Python library for data processing, upon which many of the site’s primary engagements are built.',
-        'Conceived, managed, and led development on a full migration of the site to a modern Next.js stack.',
-        'Developed core components of a new design system as part of a full redesign of the site.',
+        'Led an effort to centralize data processing strategy; single-handedly developed a bespoke data science toolkit upon which the site’s primary engagements are built.',
+        'Oversaw and led development on a full rewrite of the site in Next.js.',
       ],
     },
     {
@@ -51,9 +48,8 @@ export default {
       startDate: new Date('2019-10-07'),
       endDate: new Date('2019-04-30'),
       tasks: [
-        'Managed multiple weekly recurring alumni outreach campaigns.',
+        'Managed multiple weekly alumni outreach campaigns.',
         'Developed, revised, and sent HTML emails with good cross-client support to a large audience.',
-        'Worked in Salesforce Marketing Cloud to facilitate effective communications strategy.',
       ],
     },
     {
@@ -63,7 +59,6 @@ export default {
       endDate: [new Date('2018-08-29'), new Date('2019-08-23')],
       tasks: [
         'Worked on a team to develop large-scale React apps and meet deadlines.',
-        'Developed complex front-ends to carefully match design comps.',
         'Switched rapidly between multiple concurrent agile client projects, tracking billable hours on each.',
       ],
     },
@@ -74,7 +69,6 @@ export default {
       endDate: new Date('2018-08-01'),
       tasks: [
         'Designed and built a fully custom e-commerce front-end, back-end, and CMS a local clothing startup.',
-        'Worked closely with client to launch incremental updates to the system to coincide with product releases.',
       ],
     },
     {
@@ -92,9 +86,7 @@ export default {
       position: 'Summer Intern',
       startDate: new Date('2016-06-21'),
       endDate: new Date('2016-08-30'),
-      tasks: [
-        'Built and deployed mobile apps using Angular.js and Apache Cordova',
-      ],
+      tasks: ['Built and deployed mobile apps using Angular.js and Apache Cordova.'],
     },
   ],
 
@@ -171,8 +163,8 @@ export default {
     {
       title: 'UI/UX Design',
       description: `
-        Experienced in the use of Sketch and similar tools to create interface designs for web apps
-        which are simultaneously beautiful, responsive, and intuitive.
+        Creating interface designs for web apps which are simultaneously beautiful, responsive, and
+        intuitive.
       `,
       // prettier-ignore
       tags: [
@@ -183,8 +175,8 @@ export default {
       title: 'Other technologies',
       // prettier-ignore
       tags: [
-        'HTML', 'CSS', 'SASS', 'Python', 'Flask', 'C++', 'MongoDB', 'GraphQL', 'Docker', 'Nginx',
-        'Git', 'GitHub', 'Asana', 'Jira',
+        'HTML', 'CSS', 'SASS', 'Python', 'Flask', 'Pandas', 'C++', 'MongoDB', 'GraphQL', 'Docker',
+        'Nginx', 'Git', 'GitHub', 'Asana', 'Jira',
       ],
     },
   ],
