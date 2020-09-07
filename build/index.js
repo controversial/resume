@@ -31,11 +31,17 @@ Promise.all([
   glob('**/*.svg', { cwd: srcDir, onlyFiles: true }),
 ])
 
-// 2) Write output to disk
+// 2) Clean old build
+
+  .then(async (values) => {
+    await fs.rmdir(outDir, { recursive: true });
+    await fs.mkdir(outDir);
+    return values;
+  })
+
+// 3) Write output to disk
 
   .then(([html, { css }, filesToCopy]) => Promise.all([
-    // Create out directory if it doesn't exist
-    ...!existsSync(outDir) && [fs.mkdir(outDir)],
     // a) Write HTML
     fs.writeFile(path.join(outDir, 'index.html'), html, 'utf-8'),
     // b) Write CSS
