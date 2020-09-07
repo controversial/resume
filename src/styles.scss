@@ -32,7 +32,7 @@ main {
   & > .columns {
     @media (min-width: 540px) {
       column-count: 2;
-      column-gap: 4ch;
+      column-gap: 2em;
     }
   }
 }
@@ -166,13 +166,25 @@ ul.tags {
     font-size: 10.5px;
   }
 
+  html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+  }
+
   main {
     max-width: none;
-    padding: 3rem 8rem 0;
+    padding: 0 9rem 0;
+
+    & > .columns {
+      column-gap: 2.5em;
+    }
   }
 }
 
 @page {
   margin: 0;
-  size: A4;
+  size: letter;
 }
