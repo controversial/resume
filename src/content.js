@@ -154,6 +154,7 @@ export default {
       institution: 'Stanford Summer Institutes',
       startDate: new Date('2017-07-25'),
       endDate: new Date('2017-08-14'),
+      datePrecision: 'month',
       description: 'Artificial Intelligence',
     },
   ],

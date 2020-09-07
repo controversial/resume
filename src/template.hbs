@@ -94,8 +94,12 @@
             <article>
               <header>
                 <h3>{{educationItem.institution}}</h3>
-                <p>
-                  {{dateRange educationItem.startDate educationItem.endDate 'year'}}
+                <p class="subhead">
+                  {{#if educationItem.datePrecision}}
+                    {{dateRange educationItem.startDate educationItem.endDate educationItem.datePrecision}}
+                  {{else}}
+                    {{dateRange educationItem.startDate educationItem.endDate 'year'}}
+                  {{/if}}
                   {{#if educationItem.description}} | {{/if}}
                   {{educationItem.description}}
                 </p>
