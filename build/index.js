@@ -47,13 +47,12 @@ Promise.all([
     // b) Write CSS
     fs.writeFile(path.join(outDir, 'styles.css'), css, 'utf-8'),
     // c) Write supporting files
-    ...filesToCopy.map((f) => {
+    ...filesToCopy.map(async (f) => {
       const dir = path.join(outDir, path.dirname(f));
-      if (!existsSync(dir)) return fs.mkdir(dir, { recursive: true });
-      return undefined;
+      if (!existsSync(dir)) await fs.mkdir(dir, { recursive: true });
+      return fs.copyFile(
+        path.join(srcDir, f),
+        path.join(outDir, f),
+      );
     }),
-    ...filesToCopy.map((f) => fs.copyFile(
-      path.join(srcDir, f),
-      path.join(outDir, f),
-    )),
   ]));
