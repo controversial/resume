@@ -49,7 +49,7 @@
                     dateRange
                     experienceItem.startDate experienceItem.endDate
                     experienceItem.datePrecision
-                  }} | {{experienceBlock.position}}
+                  }} | {{experienceItem.position}}
                 </p>
               </header>
               <ul>
@@ -65,6 +65,7 @@
 
         <section id="work">
           <h2>Work</h2>
+
           {{#each work as |project|}}
             <article>
               <header>
@@ -88,6 +89,7 @@
 
         <section id="education">
           <h2>Education</h2>
+
           {{#each education as |educationItem|}}
             <article>
               <header>
@@ -106,6 +108,7 @@
 
         <section id="skills">
           <h2>Skills</h2>
+
           {{#each skills as |skillBlock|}}
             <article>
               <header>
@@ -118,6 +121,18 @@
                 {{/each}}
               </ul>
             </article>
+          {{/each}}
+        </section>
+
+        {{!-- Contact --}}
+        <section id="contact">
+          <h2>Contact</h2>
+
+          {{#each contact as |contactItem|}}
+            <li>
+              {{!-- TODO: icon --}}
+              {{displayLink value type}}
+            </li>
           {{/each}}
         </section>
       </div>
