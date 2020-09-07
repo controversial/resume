@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -15,7 +19,7 @@
 }
 
 main {
-  max-width: 100ch;
+  max-width: 9.75in;
   margin: 0 auto;
   padding: 1.5rem;
   @media (min-width: 540px) { padding: 2rem; }
@@ -74,7 +78,7 @@ h3 {
   }
 }
 
-p, ul, ol {
+p, ul, ol, li {
   font-size: 17 / 16 * 1rem;
   font-weight: 400;
   margin: .4rem 0 0;
@@ -83,4 +87,31 @@ p, ul, ol {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+
+#experience {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    li::before {
+      content: '';
+      background: var(--gray-med);
+      mask: url('icons/check.svg');
+      -webkit-mask: url('icons/check.svg');
+      mask-size: 100% 100%;
+      display: block;
+      width: 1.15em;
+      height: 1.15em;
+      flex: 0 0 auto;
+      margin: .125em .5ch 0 0;
+    }
+  }
 }
