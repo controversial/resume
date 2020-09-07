@@ -1,23 +1,38 @@
 {
-  "name": "universal-resume",
-  "version": "1.0.7",
-  "description": "Resume website template that works on a monitor, paper, and phone.",
-  "author": "WebPraktikos <hi@webpraktikos.com>",
+  "name": "resume",
+  "type": "module",
+  "version": "2.0.0",
   "scripts": {
-    "serve": "concurrently \"postcss ./tailwind.css -o public/styles.css --watch\"  \"live-server ./public \"",
-    "dev": "cross-env NODE_ENV=dev postcss ./tailwind.css -o public/styles.css",
-    "public": "cross-env NODE_ENV=public postcss ./tailwind.css -o public/styles.css"
+    "test": "npx --node-arg=--experimental-vm-modules --node-arg=--no-warnings jest",
+    "build": "node build",
+    "watch": "nodemon build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/controversial/resume.git"
+  },
+  "author": "Luke Deen Taylor",
+  "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^9.5.1",
-    "tailwindcss": "^1.0.1"
+    "globby": "^11.0.1",
+    "handlebars": "^4.7.6",
+    "node-sass": "^4.14.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^1.2.0",
-    "concurrently": "^4.1.0",
-    "cross-env": "^5.2.0",
-    "cssnano": "^4.1.10",
-    "live-server": "^1.2.1",
-    "postcss-cli": "^6.1.2"
+    "@babel/core": "^7.11.6",
+    "babel-eslint": "^11.0.0-beta.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
+  },
+  "babel": {},
+  "nodemonConfig": {
+    "ext": "js,hbs,scss",
+    "watch": ["src", "build"]
   }
 }

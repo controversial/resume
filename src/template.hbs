@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Luke Deen Taylor — Resume</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Luke Deen Taylor</h1>
+      </header>
+
+      <div class="columns">
+        {{!-- About --}}
+
+        <section id="about">
+          <h2>About</h2>
+
+          {{#each about as |aboutItem|}}
+            <article>
+              <header>
+                <h3>{{aboutItem.title}}</h3>
+                <p class="subhead">Since {{getDateComponent aboutItem.originDate 'year'}}</p>
+              </header>
+              <p>
+                {{aboutItem.description}}
+              </p>
+            </article>
+          {{/each}}
+        </section>
+
+        {{!-- Experience --}}
+
+        <section id="experience">
+          <h2>Experience</h2>
+
+          {{#each experience as |experienceItem|}}
+            <article>
+              <header>
+                <h3>{{experienceItem.employer}}</h3>
+                <p class="subhead">
+                  {{
+                    dateRange
+                    experienceItem.startDate experienceItem.endDate
+                    experienceItem.datePrecision
+                  }} | {{experienceItem.position}}
+                </p>
+              </header>
+              <ul>
+                {{#each experienceItem.tasks as |task|}}
+                  <li>{{task}}</li>
+                {{/each}}
+              </ul>
+            </article>
+          {{/each}}
+        </section>
+
+        {{!-- Work --}}
+
+        <section id="work">
+          <h2>Original Work</h2>
+
+          {{#each work as |project|}}
+            <article>
+              <header>
+                <h3><a href="{{project.href}}">{{project.title}}</a></h3>
+                <p class="subhead">
+                  {{dateRange project.startDate project.endDate 'year'}}
+                  |
+                  {{#each project.tags as |tag|}}
+                    {{tag}}{{#unless @last}}, {{/unless}}
+                  {{/each}}
+                </p>
+              </header>
+              <p>
+                {{project.description}}
+              </p>
+            </article>
+          {{/each}}
+        </section>
+
+        {{!-- Education --}}
+
+        <section id="education">
+          <h2>Education</h2>
+
+          {{#each education as |educationItem|}}
+            <article>
+              <header>
+                <h3>{{educationItem.institution}}</h3>
+                <p class="subhead">
+                  {{dateRange educationItem.startDate educationItem.endDate 'year'}}
+                  {{#if educationItem.description}} | {{/if}}
+                  {{educationItem.description}}
+                </p>
+              </header>
+            </article>
+          {{/each}}
+        </section>
+
+        {{!-- Skills --}}
+
+        <section id="skills">
+          <h2>Skills</h2>
+
+          {{#each skills as |skillBlock|}}
+            <article>
+              <header>
+                <h3>{{skillBlock.title}}</h3>
+              </header>
+              <p>{{skillBlock.description}}</p>
+              <ul class="tags">
+                {{#each skillBlock.tags as |tag|}}
+                  <li>{{tag}}</li>
+                {{/each}}
+              </ul>
+            </article>
+          {{/each}}
+        </section>
+
+        {{!-- Contact --}}
+        <section id="contact">
+          <h2>Contact</h2>
+
+          <ul>
+            {{#each contact as |contactItem|}}
+              <li>
+                {{icon type}}
+                {{displayLink value type}}
+              </li>
+            {{/each}}
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
