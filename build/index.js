@@ -63,6 +63,9 @@ Promise.all([
 
 // 4) Capture screenshot and PDF using puppeteer
 
+  .then(() => {
+    if (process.argv.includes('--no-render')) process.exit();
+  })
   .then(() => process.stdout.write('Capturing PDF and static image... '))
   .then(async () => {
     const browser = await puppeteer.launch();

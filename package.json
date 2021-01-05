@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npx --node-arg=--experimental-vm-modules --node-arg=--no-warnings jest",
     "build": "node build",
-    "watch": "nodemon build"
+    "watch": "nodemon build -- --no-render"
   },
   "repository": {
     "type": "git",
