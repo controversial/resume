@@ -88,6 +88,9 @@
                   {{dateRange educationItem.startDate educationItem.endDate 'year'}}
                   {{#if educationItem.description}} | {{/if}}
                   {{educationItem.description}}
+                  {{#if educationItem.gpa}} | {{/if}}
+                  {{educationItem.gpa}}
+                  {{#if educationItem.gpa}} GPA{{/if}}
                 </p>
               </header>
             </article>

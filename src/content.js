@@ -113,11 +113,13 @@ export default {
     {
       institution: 'Tufts University',
       startDate: new Date('2019-08-28'),
+      gpa: '3.98',
       endDate: null,
-      description: 'Student in Computer Science',
+      description: 'B.S. Computer Science',
     },
     {
       institution: 'New Paltz Central High School',
+      gpa: '96.5',
       startDate: new Date('2015-09-02'),
       endDate: new Date('2019-06-26'),
     },
@@ -137,7 +139,7 @@ export default {
         Expert-level development skills in web programming with “vanilla” JavaScript as well as with
         React and Vue.
       `,
-      tags: ['ES6+', 'React', 'Next.js', 'Vue', 'Node', 'Express'],
+      tags: ['React', 'Next.js', 'Vue', 'Node', 'Express', 'ES6+'],
     },
     {
       title: 'UI/UX Design',
@@ -147,15 +149,15 @@ export default {
       `,
       // prettier-ignore
       tags: [
-        'Sketch', 'Figma', 'CSS layout', 'CSS animation', 'Photoshop', 'Illustrator', 'Affinity',
+        'Sketch', 'Figma', 'CSS layout', 'CSS animation', 'SASS', 'Photoshop', 'Illustrator', 'Affinity',
       ],
     },
     {
       title: 'Other technologies',
       // prettier-ignore
       tags: [
-        'HTML', 'CSS', 'SASS', 'Python', 'Flask', 'Pandas', 'C++', 'MongoDB', 'GraphQL', 'Docker',
-        'Nginx', 'Git', 'GitHub', 'Asana', 'Jira',
+        'Python', 'Pandas', 'Flask', 'C', 'C++', 'Docker', 'Git',
+        'GraphQL', 'Asana', 'GitHub', 'Jira',
       ],
     },
   ],
