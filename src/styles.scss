@@ -125,10 +125,7 @@ ul.tags {
 
     li::before {
       content: '';
-      background: var(--gray-med);
-      mask: url('icons/check.svg');
-      -webkit-mask: url('icons/check.svg');
-      mask-size: 100% 100%;
+      background-image: url('icons/check.svg');
       display: block;
       width: 1.15em;
       height: 1.15em;
@@ -172,6 +169,7 @@ ul.tags {
   body {
     display: flex;
     align-items: center;
+    -webkit-print-color-adjust: exact;
   }
 
   main {
@@ -181,6 +179,12 @@ ul.tags {
     & > .columns {
       column-gap: 2.5em;
     }
+  }
+
+  #experience ul li:before {
+    // Prevent rounding errors that make the circle look stretched
+    width: 13px;
+    height: 13px;
   }
 }
 
