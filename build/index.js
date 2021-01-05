@@ -61,7 +61,7 @@ Promise.all([
   ]))
   .then(() => process.stdout.write('Done!\n'))
 
-// 4) Capture screenshot and PDF using puppeteer
+// 4) Capture PDF and screenshot using puppeteer
 
   .then(() => {
     if (process.argv.includes('--no-render')) process.exit();
@@ -70,12 +70,18 @@ Promise.all([
   .then(async () => {
     const browser = await puppeteer.launch();
 
+    // Capture US Letter size PDF
     const page = await browser.newPage();
     await page.goto(`file://${path.join(outDir, 'index.html')}`, { waitUntil: 'networkidle0' });
     await page.pdf({
       path: 'resume.pdf',
       preferCSSPageSize: true,
     });
+    // Capture screenshot (same size as PDF, we hope)
+    await page.emulateMediaType('print');
+    const ppi = 96;
+    await page.setViewport({ width: 8.5 * ppi, height: 11 * ppi, deviceScaleFactor: 2 });
+    await page.screenshot({ path: 'preview.png' });
 
     await browser.close();
   })
