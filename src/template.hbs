@@ -33,7 +33,12 @@
           {{#each experience as |experienceItem|}}
             <article>
               <header>
-                <h3>{{experienceItem.employer}}</h3>
+                <h3>
+                  {{experienceItem.employer}}
+                  {{#if experienceItem.description}}
+                    <span class="description">{{experienceItem.description}}</span>
+                  {{/if}}
+                </h3>
                 <p class="subhead">
                   {{
                     dateRange
