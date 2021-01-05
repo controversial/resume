@@ -9,10 +9,14 @@ import sass from 'sass';
 import Handlebars from 'handlebars';
 import './handlebars-helpers/index.js';
 
+import puppeteer from 'puppeteer';
+
 const compileSass = promisify(sass.render);
 
 
 // 1) Generate output
+
+process.stdout.write('Compiling... ');
 
 Promise.all([
   // a) Compile HTML
@@ -54,4 +58,22 @@ Promise.all([
         path.join(outDir, f),
       );
     }),
-  ]));
+  ]))
+  .then(() => process.stdout.write('Done!\n'))
+
+// 4) Capture screenshot and PDF using puppeteer
+
+  .then(() => process.stdout.write('Capturing PDF and static image... '))
+  .then(async () => {
+    const browser = await puppeteer.launch();
+
+    const page = await browser.newPage();
+    await page.goto(`file://${path.join(outDir, 'index.html')}`, { waitUntil: 'networkidle0' });
+    await page.pdf({
+      path: 'resume.pdf',
+      preferCSSPageSize: true,
+    });
+
+    await browser.close();
+  })
+  .then(() => process.stdout.write('Done!\n'));
