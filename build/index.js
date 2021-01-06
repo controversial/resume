@@ -2,6 +2,7 @@ import path from 'path';
 import { promises as fs, existsSync } from 'fs';
 import { promisify } from 'util';
 import glob from 'globby';
+import dotenv from 'dotenv';
 
 import { srcDir, outDir } from './paths.js';
 
@@ -9,9 +10,9 @@ import sass from 'sass';
 import Handlebars from 'handlebars';
 import './handlebars-helpers/index.js';
 
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 
-const compileSass = promisify(sass.render);
+dotenv.config();
 
 
 // 1) Generate output
@@ -29,7 +30,7 @@ Promise.all([
     return templateFunc(content);
   })(),
   // b) Compile SASS
-  compileSass({ file: path.join(srcDir, 'styles.scss') }),
+  promisify(sass.render)({ file: path.join(srcDir, 'styles.scss') }),
   // c) Get supporting files
   glob('**/*.svg', { cwd: srcDir, onlyFiles: true }),
 ])
@@ -68,7 +69,9 @@ Promise.all([
   })
   .then(() => process.stdout.write('Capturing PDF and static image... '))
   .then(async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+      executablePath: process.env.CHROMIUM_EXECUTABLE_PATH,
+    });
 
     // Capture US Letter size PDF
     const page = await browser.newPage();
