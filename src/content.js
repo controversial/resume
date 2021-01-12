@@ -151,7 +151,7 @@ export default {
         Expert-level development skills in web programming with “vanilla” JavaScript as well as with
         React and Vue.
       `,
-      tags: ['React', 'Next.js', 'Vue', 'Node', 'Express', 'ES6+'],
+      tags: ['React', 'Next.js', 'Vue', 'TypeScript', 'Node'],
     },
     {
       title: 'UI/UX Design',
