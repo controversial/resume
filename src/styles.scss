@@ -24,9 +24,12 @@ main {
   padding: 1.5rem;
   @media (min-width: 540px) { padding: 2rem; }
   @media (min-width: 768px) { padding: 4rem; }
+  display: flex;
+  flex-direction: column;
 
   & > header {
     margin-bottom: 1.5rem;
+    align-self: flex-start;
 
     a {
       display: block;
@@ -76,6 +79,7 @@ h3 {
   font-weight: 600;
   color: var(--gray-dark);
   margin: 0;
+  display: flex;
 
   .description {
     color: var(--gray-med);
@@ -83,6 +87,23 @@ h3 {
 
     &::before {
       content: '|\00a0';
+    }
+  }
+
+  .icons {
+    display: flex;
+    margin-left: .25em;
+    font-size: 22 / 16 * 1rem;
+    margin-bottom: -1em;
+
+    a {
+      display: block;
+      margin-left: .25em;
+    }
+
+    svg {
+      width: auto;
+      height: 1em;
     }
   }
 
@@ -201,6 +222,10 @@ ul.tags {
     // Prevent rounding errors that make the circle look stretched
     width: 13px;
     height: 13px;
+  }
+  h3 > .icons svg {
+    width: 14px;
+    height: 14px;
   }
 }
 

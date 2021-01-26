@@ -83,6 +83,7 @@ export default {
     {
       title: 'Codus.io',
       href: 'https://codus.io/',
+      github: 'https://github.com/codus-app/codus',
       startDate: new Date('2018-01-01'), // year precision
       endDate: new Date('2019-01-01'),
       tags: ['Vue', 'Express', 'Docker'],
@@ -95,6 +96,7 @@ export default {
     {
       title: 'sleep later',
       href: 'https://sleeplater.now.sh/',
+      github: 'https://github.com/controversial/sleeplater.co',
       startDate: new Date('2018-05-01'),
       endDate: new Date('2018-08-01'),
       tags: ['JavaScript', 'Vue.js', 'Airtable'],
@@ -102,7 +104,8 @@ export default {
     },
     {
       title: 'Wikipedia Map',
-      href: 'https://github.com/controversial/wikipedia-map',
+      href: 'https://wikipedia.luk.ke/',
+      github: 'https://github.com/controversial/wikipedia-map',
       startDate: new Date('2016-01-01'),
       endDate: new Date('2016-12-31'),
       tags: ['JavaScript', 'Node.js', 'Flask'],

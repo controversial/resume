@@ -72,7 +72,13 @@
           {{#each work as |project|}}
             <article>
               <header>
-                <h3><a href="{{project.href}}">{{project.title}}</a></h3>
+                <h3>
+                  <a href="{{project.href}}">{{project.title}}</a>
+                  <span class="icons">
+                    <a href="{{project.github}}">{{icon "github"}}</a>
+                    <a href="{{project.href}}">{{icon "link"}}</a>
+                  </span>
+                </h3>
                 <p class="subhead">
                   {{dateRange project.startDate project.endDate 'year'}}
                   |
