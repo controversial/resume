@@ -26,3 +26,5 @@ Just do `npm run test`
 
 ## Credits
 While this is my own implementation entirely, it largely imitates a [design by WebPraktikos](https://github.com/WebPraktikos/universal-resume).
+
+The document is set in [IBM Plex Sans](https://www.ibm.com/plex/). The icons are taken from [Heroicons](https://heroicons.com/).
