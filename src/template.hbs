@@ -14,11 +14,16 @@
     <main>
       <header>
         <h1>Luke Deen Taylor</h1>
-        <div>
-          {{displayLink email "email"}}
-          /
-          {{displayLink portfolio "link"}}
-        </div>
+        <ul class="links">
+          <li>
+            {{icon "email"}}
+            {{displayLink email "email"}}
+          </li>
+          <li>
+            {{icon "globe"}}
+            {{displayLink portfolio "link"}}
+          </li>
+        </ul>
       </header>
 
       <div class="columns">
@@ -54,15 +59,15 @@
           {{/each}}
         </section>
 
-        {{!-- Contact --}}
-        <section id="contact">
-          <h2>Contact</h2>
+        {{!-- Links --}}
+        <section id="links">
+          <h2>Links</h2>
 
-          <ul>
-            {{#each contact as |contactItem|}}
+          <ul class="links">
+            {{#each links as |link|}}
               <li>
-                {{icon type}}
-                {{displayLink value type}}
+                {{icon "link"}}
+                {{displayLink link "link"}}
               </li>
             {{/each}}
           </ul>

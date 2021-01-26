@@ -21,15 +21,15 @@ html, body {
 main {
   max-width: 9.75in;
   margin: 0 auto;
-  padding: 1.5rem;
-  @media (min-width: 540px) { padding: 2rem; }
-  @media (min-width: 768px) { padding: 4rem; }
-  display: flex;
-  flex-direction: column;
+  padding: 1rem 1.5rem 1.5rem;
+  @media (min-width: 540px) { padding: 1.5rem 2rem 2rem; }
+  @media (min-width: 768px) { padding: 3rem 4rem 4rem; }
 
   & > header {
     margin-bottom: 1.5rem;
-    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     div {
       margin-top: .25em;
@@ -171,23 +171,21 @@ ul.tags {
   }
 }
 
-#contact {
-  ul {
-    list-style-type: none;
-    padding: 0;
+ul.links {
+  list-style-type: none;
+  padding: 0;
 
-    li {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      margin: .4rem 0 0;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: .4rem 0 0;
 
-      svg {
-        width: 1.2em;
-        height: 1.2em;
-        margin-right: .75ch;
-        color: var(--gray-med);
-      }
+    svg {
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: .75ch;
+      color: var(--gray-med);
     }
   }
 }

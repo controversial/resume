@@ -187,10 +187,9 @@ export default {
     },
   ],
 
-  contact: [
-    { type: 'email', value: email },
-    { type: 'tel', value: '845 943 9304' },
-    { type: 'link', value: 'github.com/controversial' },
-    { type: 'link', value: 'dribbble.com/controversial' },
+  links: [
+    'github.com/controversial',
+    'dribbble.com/controversial',
+    'linkedin.com/in/lukedeentaylor',
   ],
 };
