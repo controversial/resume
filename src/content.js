@@ -21,7 +21,7 @@ export default {
       startDate: new Date('2020-05-06'),
       endDate: new Date('2020-09-04'),
       tasks: [
-        'Worked as one of three core developers maintaining and expanding coronavirus.jhu.edu, a crucial public health resource drawing 15 million weekly visitors.',
+        'Served as one of three core developers maintaining and expanding coronavirus.jhu.edu, a crucial public health resource drawing 15 million weekly visitors.',
         'Created rich visual data displays that are cited daily by The Washington Post, NPR, and others.',
         'Led effort to centralize data processing strategy; single-handedly developed Python data science toolkit upon which the site’s primary engagements are built.',
         'Oversaw and led development on a major redesign and a full rewrite of the site in Next.js.',
@@ -33,7 +33,7 @@ export default {
       location: 'Tufts University',
       startDate: new Date('2019-10-01'),
       tasks: [
-        'Work on a student team to develop web applications pro-bono for nonprofit organizations.',
+        'Collaborate in a student team to develop web applications pro-bono for nonprofit organizations.',
         'Create and lead instructional workshops to teach web development with React.',
         'Perform project management duties: write and assign tickets; monitor the progress of a year-long project.',
       ],
@@ -54,7 +54,7 @@ export default {
       location: 'Kingston, NY',
       startDate: new Date('2018-06-20'),
       tasks: [
-        'Work on developer team building large-scale React apps and meeting deadlines.',
+        'Build large-scale React apps in a team setting.',
         'Switch rapidly between multiple concurrent agile client projects, tracking billable hours on each.',
         'Write extensive internal technical documentation, as well as public-facing technical blog articles.',
       ],
