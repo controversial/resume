@@ -2,7 +2,7 @@ export default {
   about: `
     I’ve been interested in creating with code since my first LEGO robotics projects as a little
     kid. I picked up Python in middle school, then turned to the web to share my creations with
-    the world. In high schoool, I started working with JavaScript and CSS for fun, and eagerly
+    the world. In high school, I started working with JavaScript and CSS for fun, and eagerly
     expanded my skills until I’d mastered modern web development. Today, I pair this expertise with
     skills in interface design and back-end development to bring projects I'm passionate about to
     life.
@@ -17,7 +17,7 @@ export default {
       endDate: new Date('2020-09-04'),
       tasks: [
         'Worked as one of three core developers maintaining and expanding coronavirus.jhu.edu, a crucial public health resource drawing 15 million weekly visitors.',
-        'Created rich visual data displays that are cited daily by The Washington Post, NPR and others.',
+        'Created rich visual data displays that are cited daily by The Washington Post, NPR, and others.',
         'Led effort to centralize data processing strategy; single-handedly developed Python data science toolkit upon which the site’s primary engagements are built.',
         'Oversaw and led development on a major redesign and a full rewrite of the site in Next.js.',
       ],
@@ -156,7 +156,7 @@ export default {
     {
       title: 'UI/UX Design',
       description: `
-        Creating interface designs for web apps which are simultaneously beautiful, responsive, and
+        Creating interface designs for web apps that are simultaneously beautiful, responsive, and
         intuitive.
       `,
       // prettier-ignore
