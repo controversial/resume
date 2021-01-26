@@ -14,17 +14,10 @@
     <main>
       <header>
         <h1>Luke Deen Taylor</h1>
+        {{displayLink email "email"}}
       </header>
 
       <div class="columns">
-        {{!-- About --}}
-
-        <section id="about">
-          <h2>About</h2>
-
-          <p>{{about}}</p>
-        </section>
-
         {{!-- Experience --}}
 
         <section id="experience">
@@ -55,6 +48,20 @@
               </ul>
             </article>
           {{/each}}
+        </section>
+
+        {{!-- Contact --}}
+        <section id="contact">
+          <h2>Contact</h2>
+
+          <ul>
+            {{#each contact as |contactItem|}}
+              <li>
+                {{icon type}}
+                {{displayLink value type}}
+              </li>
+            {{/each}}
+          </ul>
         </section>
 
         {{!-- Work --}}
@@ -121,20 +128,6 @@
               </ul>
             </article>
           {{/each}}
-        </section>
-
-        {{!-- Contact --}}
-        <section id="contact">
-          <h2>Contact</h2>
-
-          <ul>
-            {{#each contact as |contactItem|}}
-              <li>
-                {{icon type}}
-                {{displayLink value type}}
-              </li>
-            {{/each}}
-          </ul>
         </section>
       </div>
     </main>

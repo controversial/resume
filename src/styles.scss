@@ -27,6 +27,13 @@ main {
 
   & > header {
     margin-bottom: 1.5rem;
+
+    a {
+      display: block;
+      margin-top: .25em;
+      font-size: 18 / 16 * 1rem;
+      padding-left: 1px;
+    }
   }
 
   & > .columns {

@@ -1,3 +1,5 @@
+const email = 'luke@deentaylor.com';
+
 export default {
   about: `
     I’ve been interested in creating with code since my first LEGO robotics projects as a little
@@ -7,6 +9,8 @@ export default {
     skills in interface design and back-end development to bring projects I'm passionate about to
     life.
   `,
+
+  email,
 
   experience: [
     {
@@ -126,7 +130,7 @@ export default {
       institution: 'Tufts University',
       startDate: new Date('2019-08-28'),
       gpa: '3.98',
-      endDate: null,
+      endDate: new Date('2023-05-23'),
       description: 'B.S. Computer Science',
     },
     {
@@ -165,18 +169,23 @@ export default {
       ],
     },
     {
-      title: 'Other technologies',
+      title: 'Programming Languages',
       // prettier-ignore
-      tags: [
-        'Python', 'Pandas', 'Flask', 'C', 'C++', 'Docker',
-        'Git', 'GraphQL', 'Asana', 'GitHub', 'Jira',
-      ],
+      tags: ['JavaScript', 'Python', 'C', 'C++', 'Java'],
+    },
+    {
+      title: 'Technologies',
+      tags: ['Docker', 'Flask', 'Django', 'Express', 'Pandas'],
+    },
+    {
+      title: 'Tools',
+      tags: ['Git', 'GraphQL', 'Asana', 'GitHub', 'Jira'],
     },
   ],
 
   contact: [
     { type: 'link', value: 'luke.deentaylor.com' },
-    { type: 'email', value: 'luke@deentaylor.com' },
+    { type: 'email', value: email },
     { type: 'link', value: 'github.com/controversial' },
     { type: 'link', value: 'dribbble.com/controversial' },
     { type: 'tel', value: '845 943 9304' },
