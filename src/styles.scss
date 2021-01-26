@@ -196,7 +196,7 @@ ul.tags {
 
 @media print {
   :root {
-    font-size: 10.5px;
+    font-size: 11px;
   }
 
   html, body {
@@ -210,7 +210,7 @@ ul.tags {
 
   main {
     max-width: none;
-    padding: 0 9rem 0;
+    padding: 0 8.5rem 0;
 
     & > .columns {
       column-gap: 2.5em;
@@ -223,8 +223,8 @@ ul.tags {
     height: 13px;
   }
   h3 > .icons svg {
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
   }
 }
 
