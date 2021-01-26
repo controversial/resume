@@ -11,6 +11,7 @@ export default {
   `,
 
   email,
+  portfolio: 'luke.deentaylor.com',
 
   experience: [
     {
@@ -187,10 +188,9 @@ export default {
   ],
 
   contact: [
-    { type: 'link', value: 'luke.deentaylor.com' },
     { type: 'email', value: email },
+    { type: 'tel', value: '845 943 9304' },
     { type: 'link', value: 'github.com/controversial' },
     { type: 'link', value: 'dribbble.com/controversial' },
-    { type: 'tel', value: '845 943 9304' },
   ],
 };
