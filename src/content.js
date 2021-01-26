@@ -188,8 +188,9 @@ export default {
   ],
 
   links: [
+    'luke.deentaylor.com',
     'github.com/controversial',
-    'dribbble.com/controversial',
+    // 'dribbble.com/controversial',
     'linkedin.com/in/lukedeentaylor',
   ],
 };
