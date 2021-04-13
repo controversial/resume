@@ -36,9 +36,9 @@
             <article>
               <header>
                 <h3>
-                  {{experienceItem.employer}}
+                  {{{experienceItem.employer}}}
                   {{#if experienceItem.description}}
-                    <span class="description">{{experienceItem.description}}</span>
+                    <span class="description">{{{experienceItem.description}}}</span>
                   {{/if}}
                 </h3>
                 <p class="subhead">
@@ -52,7 +52,7 @@
               </header>
               <ul>
                 {{#each experienceItem.tasks as |task|}}
-                  <li>{{task}}</li>
+                  <li><span>{{{task}}}</span></li>
                 {{/each}}
               </ul>
             </article>
@@ -97,7 +97,7 @@
                 </p>
               </header>
               <p>
-                {{project.description}}
+                {{{project.description}}}
               </p>
             </article>
           {{/each}}
@@ -115,7 +115,7 @@
                 <p class="subhead">
                   {{dateRange educationItem.startDate educationItem.endDate 'year'}}
                   {{#if educationItem.description}} | {{/if}}
-                  {{educationItem.description}}
+                  {{{educationItem.description}}}
                   {{#if educationItem.gpa}} | {{/if}}
                   {{educationItem.gpa}}
                   {{#if educationItem.gpa}} GPA{{/if}}
@@ -135,7 +135,7 @@
               <header>
                 <h3>{{skillBlock.title}}</h3>
               </header>
-              <p>{{skillBlock.description}}</p>
+              <p>{{{skillBlock.description}}}</p>
               <ul class="tags">
                 {{#each skillBlock.tags as |tag|}}
                   <li>{{tag}}</li>

@@ -32,7 +32,7 @@ export default {
       startDate: new Date('2020-05-06'),
       endDate: new Date('2020-09-04'),
       tasks: [
-        'Maintained and expanded coronavirus.jhu.edu, a crucial public health resource drawing millions of visitors.',
+        'Maintained and expanded <a href="https://coronavirus.jhu.edu" target="_blank" rel="noopener noreferrer">coronavirus.jhu.edu</a>, a crucial public health resource drawing millions of visitors.',
         'Created rich visual data displays that were cited daily by The Washington Post, NPR, and others.',
         'Led effort to centralize data processing strategy; single-handedly developed Python data science toolkit upon which the site’s primary engagements are built.',
         'Oversaw and led development on a major redesign and a full rewrite of the site in Next.js.',
