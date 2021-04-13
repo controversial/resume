@@ -15,19 +15,6 @@ export default {
 
   experience: [
     {
-      employer: 'Johns Hopkins Coronavirus Resource Center',
-      position: 'Full-Stack Software Engineer',
-      location: 'Remote',
-      startDate: new Date('2020-05-06'),
-      endDate: new Date('2020-09-04'),
-      tasks: [
-        'Served as one of three core developers maintaining and expanding coronavirus.jhu.edu, a crucial public health resource drawing 15 million weekly visitors.',
-        'Created rich visual data displays that are cited daily by The Washington Post, NPR, and others.',
-        'Led effort to centralize data processing strategy; single-handedly developed Python data science toolkit upon which the site’s primary engagements are built.',
-        'Oversaw and led development on a major redesign and a full rewrite of the site in Next.js.',
-      ],
-    },
-    {
       employer: 'JumboCode',
       position: 'Engineering Lead',
       location: 'Tufts University',
@@ -36,6 +23,19 @@ export default {
         'Collaborate in a student team to develop web applications pro-bono for nonprofit organizations.',
         'Create and lead instructional workshops to teach web development with React.',
         'Perform project management duties: write and assign tickets; monitor the progress of a year-long project.',
+      ],
+    },
+    {
+      employer: 'Johns Hopkins Coronavirus Resource Center',
+      position: 'Full-Stack Software Engineer',
+      location: 'Remote',
+      startDate: new Date('2020-05-06'),
+      endDate: new Date('2020-09-04'),
+      tasks: [
+        'Maintained and expanded coronavirus.jhu.edu, a crucial public health resource drawing millions of visitors.',
+        'Created rich visual data displays that were cited daily by The Washington Post, NPR, and others.',
+        'Led effort to centralize data processing strategy; single-handedly developed Python data science toolkit upon which the site’s primary engagements are built.',
+        'Oversaw and led development on a major redesign and a full rewrite of the site in Next.js.',
       ],
     },
     {
@@ -53,6 +53,7 @@ export default {
       position: 'Junior Web Developer',
       location: 'Kingston, NY',
       startDate: new Date('2018-06-20'),
+      endDate: new Date('2020-09-01'),
       tasks: [
         'Build large-scale React apps in a team setting.',
         'Switch rapidly between multiple concurrent agile client projects, tracking billable hours on each.',
