@@ -55,9 +55,9 @@ export default {
       startDate: new Date('2018-06-20'),
       endDate: new Date('2020-09-01'),
       tasks: [
-        'Build large-scale React apps in a team setting.',
-        'Switch rapidly between multiple concurrent agile client projects, tracking billable hours on each.',
-        'Write extensive internal technical documentation, as well as public-facing technical blog articles.',
+        'Built large-scale React apps in a team setting.',
+        'Switched rapidly between multiple concurrent agile client projects, tracking billable hours on each.',
+        'Wrote extensive internal technical documentation, as well as public-facing technical blog articles.',
       ],
     },
     {
