@@ -16,7 +16,7 @@ export default {
   experience: [
     {
       employer: 'JumboCode',
-      position: 'Engineering Lead',
+      position: 'Head of Engineering',
       location: 'Tufts University',
       startDate: new Date('2019-10-01'),
       tasks: [
