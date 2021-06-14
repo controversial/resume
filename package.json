@@ -14,10 +14,9 @@
   "author": "Luke Deen Taylor",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^10.0.0",
     "globby": "^11.0.3",
     "handlebars": "^4.7.7",
-    "puppeteer-core": "^10.0.0",
+    "puppeteer": "^10.0.0",
     "sass": "^1.34.1"
   },
   "devDependencies": {

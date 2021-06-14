@@ -2,7 +2,6 @@ import path from 'path';
 import { promises as fs, existsSync } from 'fs';
 import { promisify } from 'util';
 import glob from 'globby';
-import dotenv from 'dotenv';
 
 import { srcDir, outDir } from './paths.js';
 
@@ -10,9 +9,7 @@ import sass from 'sass';
 import Handlebars from 'handlebars';
 import './handlebars-helpers/index.js';
 
-import puppeteer from 'puppeteer-core';
-
-dotenv.config();
+import puppeteer from 'puppeteer';
 
 
 // 1) Generate output
@@ -69,9 +66,7 @@ Promise.all([
   })
   .then(() => process.stdout.write('Capturing PDF and static image... '))
   .then(async () => {
-    const browser = await puppeteer.launch({
-      executablePath: process.env.CHROMIUM_EXECUTABLE_PATH,
-    });
+    const browser = await puppeteer.launch();
 
     // Capture US Letter size PDF
     const page = await browser.newPage();
