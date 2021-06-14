@@ -38,7 +38,7 @@ Promise.all([
 // 2) Clean old build
 
   .then(async (values) => {
-    await fs.rmdir(outDir, { recursive: true });
+    await fs.rm(outDir, { recursive: true });
     await fs.mkdir(outDir);
     return values;
   })

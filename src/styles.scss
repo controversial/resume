@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700');
 
 html, body {
@@ -60,7 +61,7 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 15 / 16 * 1rem;
+  font-size: math.div(15, 16) * 1rem;
   font-weight: 700;
   color: var(--gray-light);
   text-transform: uppercase;
@@ -68,7 +69,7 @@ h2 {
   margin: 0 0 0.35rem;
 }
 h3 {
-  font-size: 18 / 16 * 1rem;
+  font-size: math.div(18, 16) * 1rem;
   font-weight: 600;
   color: var(--gray-dark);
   margin: 0;
@@ -86,7 +87,7 @@ h3 {
   .icons {
     display: flex;
     margin-left: .25em;
-    font-size: 22 / 16 * 1rem;
+    font-size: math.div(22, 16) * 1rem;
     margin-bottom: -1em;
 
     a {
@@ -101,7 +102,7 @@ h3 {
   }
 
   & + p.subhead {
-    font-size: 17 / 16 * 1rem;
+    font-size: math.div(17, 16) * 1rem;
     font-weight: 400;
     color: var(--gray-med);
     margin: 0;
@@ -109,7 +110,7 @@ h3 {
 }
 
 p, ul, ol {
-  font-size: 17 / 16 * 1rem;
+  font-size: math.div(17, 16) * 1rem;
   font-weight: 400;
   margin: .4rem 0 0;
 }
