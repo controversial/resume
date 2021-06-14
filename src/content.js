@@ -50,7 +50,7 @@ export default {
     },
     {
       employer: 'Moonfarmer',
-      position: 'Junior Web Developer',
+      position: 'Junior Developer',
       location: 'Kingston, NY',
       startDate: new Date('2018-06-20'),
       endDate: new Date('2020-09-01'),
