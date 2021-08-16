@@ -77,7 +77,7 @@ export default {
       location: 'Poughkeepsie, NY',
       startDate: new Date('2016-06-21'),
       endDate: new Date('2016-08-30'),
-      tasks: ['Built and deployed mobile apps using Angular.js'],
+      tasks: ['Built and deployed mobile apps using Angular.js.'],
     },
   ],
 

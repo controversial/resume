@@ -3,7 +3,7 @@
 import content from './content.js';
 
 test('All content keys are present', () => {
-  const expectedKeys = ['about', 'experience', 'work', 'education', 'skills', 'contact'];
+  const expectedKeys = ['about', 'email', 'portfolio', 'experience', 'work', 'education', 'skills', 'links'];
   expect(Object.keys(content).sort()).toEqual(expectedKeys.sort());
 });
 
@@ -40,6 +40,6 @@ test('Longform content ends with a period', () => {
   ].flat().filter((item) => !!item);
 
   longContent.forEach((text) => {
-    expect(text.trim().endsWith('.')).toBe(true);
+    expect(text.trim()).toMatch(/\.$/);
   });
 });
