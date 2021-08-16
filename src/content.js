@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const email = 'luke@deentaylor.com';
 
 export default {
@@ -32,7 +33,7 @@ export default {
       startDate: new Date('2020-05-06'),
       endDate: new Date('2020-09-04'),
       tasks: [
-        'Maintained and expanded <a href="https://coronavirus.jhu.edu" target="_blank" rel="noopener noreferrer">coronavirus.jhu.edu</a>, a crucial public health resource drawing millions of visitors.',
+        'Maintained and expanded <a href="https://coronavirus.jhu.edu" target="_blank" rel="noopener noreferrer">coronavirus.jhu.edu</a>, a key public health resource drawing millions of visitors.',
         'Created rich visual data displays that were cited daily by The Washington Post, NPR, and others.',
         'Led effort to centralize data processing strategy; single-handedly developed Python data science toolkit upon which the site’s primary engagements are built.',
         'Oversaw and led development on a major redesign and a full rewrite of the site in Next.js.',
@@ -43,6 +44,7 @@ export default {
       position: 'Developer',
       location: 'Medford, MA',
       startDate: new Date('2019-10-07'),
+      endDate: new Date('2021-05-01'),
       tasks: [
         'Manage multiple weekly alumni outreach campaigns.',
         'Develop, revise, and send HTML emails with cross-client support to a large audience.',
@@ -60,17 +62,17 @@ export default {
         'Wrote extensive internal technical documentation, as well as public-facing technical blog articles.',
       ],
     },
-    {
-      employer: 'Newburgh Armory Unity Center',
-      position: 'Classroom Assistant',
-      location: 'Newburgh, NY',
-      startDate: new Date('2017-01-01'),
-      endDate: new Date('2019-01-01'),
-      datePrecision: 'year',
-      tasks: [
-        'Volunteered teaching basic programming skills to underserved elementary school students.',
-      ],
-    },
+    // {
+    //   employer: 'Newburgh Armory Unity Center',
+    //   position: 'Classroom Assistant',
+    //   location: 'Newburgh, NY',
+    //   startDate: new Date('2017-01-01'),
+    //   endDate: new Date('2019-01-01'),
+    //   datePrecision: 'year',
+    //   tasks: [
+    //     'Volunteered teaching basic programming skills to underserved elementary school students.',
+    //   ],
+    // },
     {
       employer: 'AppMobi Inc.',
       position: 'Summer Intern',
@@ -144,13 +146,6 @@ export default {
       startDate: new Date('2015-09-02'),
       endDate: new Date('2019-06-26'),
     },
-    {
-      institution: 'Stanford Summer Institutes',
-      startDate: new Date('2017-07-25'),
-      endDate: new Date('2017-08-14'),
-      datePrecision: 'month',
-      description: 'Artificial Intelligence',
-    },
   ],
 
   skills: [
@@ -180,11 +175,7 @@ export default {
     },
     {
       title: 'Technologies',
-      tags: ['Docker', 'Flask', 'Django', 'Express', 'Pandas'],
-    },
-    {
-      title: 'Tools',
-      tags: ['Git', 'GraphQL', 'Asana', 'GitHub', 'Jira'],
+      tags: ['Docker', 'GraphQL', 'Django', 'Express', 'Pandas'],
     },
   ],
 

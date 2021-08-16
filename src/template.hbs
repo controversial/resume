@@ -59,20 +59,6 @@
           {{/each}}
         </section>
 
-        {{!-- Links --}}
-        <section id="links">
-          <h2>Links</h2>
-
-          <ul class="links">
-            {{#each links as |link|}}
-              <li>
-                {{icon "link"}}
-                {{displayLink link "link"}}
-              </li>
-            {{/each}}
-          </ul>
-        </section>
-
         {{!-- Work --}}
 
         <section id="work">
@@ -143,6 +129,20 @@
               </ul>
             </article>
           {{/each}}
+        </section>
+
+        {{!-- Links --}}
+        <section id="links">
+          <h2>Links</h2>
+
+          <ul class="links">
+            {{#each links as |link|}}
+              <li>
+                {{icon "link"}}
+                {{displayLink link "link"}}
+              </li>
+            {{/each}}
+          </ul>
         </section>
       </div>
     </main>
