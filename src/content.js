@@ -22,7 +22,7 @@ export default {
       startDate: new Date('2021-07-12'),
       tasks: [
         'Launch custom web apps at high velocity to support a range of viral products targeted at college students.',
-        'Iterate on UX patterns to promote viral growth.',
+        // 'Iterate on UX patterns to promote viral growth.',
         'Target core web vitals to establish best-in-class performance and make web experiences feel native.',
         'Take leadership within a small team of developers.',
       ],
@@ -105,6 +105,22 @@ export default {
     },
   ],
 
+  education: [
+    {
+      institution: 'Tufts University',
+      startDate: new Date('2019-08-28'),
+      gpa: '3.98',
+      endDate: new Date('2023-05-23'),
+      description: 'B.S. Computer Science',
+    },
+    {
+      institution: 'New Paltz Central High School',
+      gpa: '99.4',
+      startDate: new Date('2015-09-02'),
+      endDate: new Date('2019-06-26'),
+    },
+  ],
+
   work: [
     {
       title: 'Codus.io',
@@ -119,15 +135,15 @@ export default {
         custom online development environment.
       `,
     },
-    {
-      title: 'sleep later',
-      href: 'https://sleeplater.now.sh/',
-      github: 'https://github.com/controversial/sleeplater.co',
-      startDate: new Date('2018-05-01'),
-      endDate: new Date('2018-08-01'),
-      tags: ['JavaScript', 'Vue.js', 'Airtable'],
-      description: 'Designed and built a fully custom e-commerce front-end, back-end, and CMS for a local clothing startup.',
-    },
+    // {
+    //   title: 'sleep later',
+    //   href: 'https://sleeplater.now.sh/',
+    //   github: 'https://github.com/controversial/sleeplater.co',
+    //   startDate: new Date('2018-05-01'),
+    //   endDate: new Date('2018-08-01'),
+    //   tags: ['JavaScript', 'Vue.js', 'Airtable'],
+    //   description: 'Designed and built a fully custom e-commerce front-end, back-end, and CMS for a local clothing startup.',
+    // },
     {
       title: 'Wikipedia Map',
       href: 'https://wikipedia.luk.ke/',
@@ -154,19 +170,13 @@ export default {
     // },
   ],
 
-  education: [
+  awards: [
     {
-      institution: 'Tufts University',
-      startDate: new Date('2019-08-28'),
-      gpa: '3.98',
-      endDate: new Date('2023-05-23'),
-      description: 'B.S. Computer Science',
-    },
-    {
-      institution: 'New Paltz Central High School',
-      gpa: '99.4',
-      startDate: new Date('2015-09-02'),
-      endDate: new Date('2019-06-26'),
+      projectName: 'BGSTR',
+      href: 'https://www.awwwards.com/sites/bgstr',
+      date: new Date('2021-10-14'),
+      institution: 'Awwwards',
+      titles: ['Honorable Mention', 'Mobile Excellence'],
     },
   ],
 

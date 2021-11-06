@@ -89,6 +89,31 @@
           {{/each}}
         </section>
 
+        {{!-- Awards --}}
+
+        <section id="awards">
+          <h2>Awards</h2>
+
+          {{#each awards as |awardItem|}}
+            <article>
+              <header>
+                <h3><a href="{{awardItem.href}}">
+                  {{awardItem.projectName}} <span class="icons">{{icon "link"}}</span>
+                </a></h3>
+                <p class="subhead">
+                  {{awardItem.institution}}
+                  {{#if awardItem.date}} | {{/if}}
+                  {{getDateComponent awardItem.date 'year'}}
+                  {{#if awardItem.titles}} | {{/if}}
+                  {{#each awardItem.titles as |title|}}
+                    {{title}}{{#unless @last}}, {{/unless}}
+                  {{/each}}
+                </p>
+              </header>
+            </article>
+          {{/each}}
+        </section>
+
         {{!-- Education --}}
 
         <section id="education">
