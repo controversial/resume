@@ -16,14 +16,37 @@ export default {
 
   experience: [
     {
+      employer: 'The Marriage Pact',
+      position: 'Lead Front-End Developer',
+      location: 'Remote',
+      startDate: new Date('2021-07-12'),
+      tasks: [
+        'Launch custom web apps at high velocity to support a range of viral products targeted at college students.',
+        'Iterate on UX patterns to promote viral growth.',
+        'Target core web vitals to establish best-in-class performance and make web experiences feel native.',
+        'Take leadership within a small team of developers.',
+      ],
+    },
+    {
+      employer: 'OddCommon',
+      position: 'Developer',
+      location: 'Brooklyn, NY',
+      startDate: new Date('2021-05-17'),
+      endDate: new Date('2021-08-31'),
+      tasks: [
+        'Built complex and polished React apps with great attention to detail.',
+        'Focused on animation, performance, and micro-interactions to deliver highly polished products.',
+        'Took creative and technical ownership of client projects.',
+      ],
+    },
+    {
       employer: 'JumboCode',
       position: 'Head of Engineering',
       location: 'Tufts University',
       startDate: new Date('2019-10-01'),
       tasks: [
-        'Collaborate in a student team to develop web applications pro-bono for nonprofit organizations.',
-        'Create and lead instructional workshops to teach web development with React.',
-        'Perform project management duties: write and assign tickets; monitor the progress of a year-long project.',
+        'Advise and support 80 student developers across seven agile teams.',
+        'Create and lead instructional workshops to teach modern web development.',
       ],
     },
     {
@@ -33,10 +56,10 @@ export default {
       startDate: new Date('2020-05-06'),
       endDate: new Date('2020-09-04'),
       tasks: [
-        'Maintained and expanded <a href="https://coronavirus.jhu.edu" target="_blank" rel="noopener noreferrer">coronavirus.jhu.edu</a>, a key public health resource drawing millions of visitors.',
-        'Created rich visual data displays that were cited daily by The Washington Post, NPR, and others.',
-        'Led effort to centralize data processing strategy; single-handedly developed Python data science toolkit upon which the site’s primary engagements are built.',
-        'Oversaw and led development on a major redesign and a full rewrite of the site in Next.js.',
+        'Maintained and expanded <a href="https://coronavirus.jhu.edu" target="_blank" rel="noopener noreferrer">coronavirus.jhu.edu</a>, a critical, high-traffic public health resource.',
+        'Created rich visual data displays cited daily by The Washington Post, NPR, and others.',
+        'Led effort to centralize data processing; created data science toolkit upon which the site’s primary engagements are built.',
+        'Oversaw and led development on a full site redesign.',
       ],
     },
     {
@@ -46,8 +69,7 @@ export default {
       startDate: new Date('2019-10-07'),
       endDate: new Date('2021-05-01'),
       tasks: [
-        'Manage multiple weekly alumni outreach campaigns.',
-        'Develop, revise, and send HTML emails with cross-client support to a large audience.',
+        'Developed and sent HTML emails with cross-client support to a large audience.',
       ],
     },
     {
@@ -58,8 +80,8 @@ export default {
       endDate: new Date('2020-09-01'),
       tasks: [
         'Built large-scale React apps in a team setting.',
-        'Switched rapidly between multiple concurrent agile client projects, tracking billable hours on each.',
-        'Wrote extensive internal technical documentation, as well as public-facing technical blog articles.',
+        'Split time between multiple concurrent agile projects.',
+        'Wrote extensive documentation and blog posts.',
       ],
     },
     // {
@@ -155,7 +177,7 @@ export default {
         Expert-level development skills in web programming with “vanilla” JavaScript as well as with
         React and Vue.
       `,
-      tags: ['React', 'Next.js', 'Vue', 'TypeScript', 'Node'],
+      tags: ['React', 'Next.js', 'Gatsby', 'TypeScript', 'Node'],
     },
     {
       title: 'UI/UX Design',
