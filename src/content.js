@@ -178,6 +178,10 @@ export default {
       institution: 'Awwwards',
       titles: ['Honorable Mention', 'Mobile Excellence'],
     },
+    {
+      projectName: 'Tau Beta Pi',
+      startDate: new Date('2021-10-04'),
+    },
   ],
 
   skills: [
