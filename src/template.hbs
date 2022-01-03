@@ -102,8 +102,16 @@
                 </a></h3>
                 <p class="subhead">
                   {{awardItem.institution}}
-                  {{#if awardItem.date}} | {{/if}}
-                  {{getDateComponent awardItem.date 'year'}}
+                  {{#if awardItem.institution}}
+                    {{#if awardItem.date}} | {{/if}}
+                  {{/if}}
+                  {{#if awardItem.date}}
+                    {{getDateComponent awardItem.date 'year'}}
+                  {{else}}
+                    {{#if awardItem.startDate}}
+                      {{dateRange awardItem.startDate awardItem.endDate 'year'}}
+                    {{/if}}
+                  {{/if}}
                   {{#if awardItem.titles}} | {{/if}}
                   {{#each awardItem.titles as |title|}}
                     {{title}}{{#unless @last}}, {{/unless}}
