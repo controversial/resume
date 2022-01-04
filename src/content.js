@@ -2,6 +2,10 @@
 const email = 'luke@deentaylor.com';
 
 export default {
+  // summary: `
+  //   Award-winning creative full-stack developer with a passion for applying technology to create
+  //   beautiful and effective products.
+  // `,
   about: `
     I’ve been interested in creating with code since my first LEGO robotics projects as a little
     kid. I picked up Python in middle school, then turned to the web to share my creations with
@@ -34,7 +38,7 @@ export default {
       startDate: new Date('2021-05-17'),
       endDate: new Date('2021-08-31'),
       tasks: [
-        'Built complex and polished React apps with great attention to detail.',
+        'Built and launched complex and polished React apps from scratch with great attention to detail.',
         'Focused on animation, performance, and micro-interactions to deliver highly polished products.',
         'Took creative and technical ownership of client projects.',
       ],
@@ -68,9 +72,7 @@ export default {
       location: 'Medford, MA',
       startDate: new Date('2019-10-07'),
       endDate: new Date('2021-05-01'),
-      tasks: [
-        'Developed and sent HTML emails with cross-client support to a large audience.',
-      ],
+      tasks: ['Developed and sent HTML emails with cross-client support to a large audience.'],
     },
     {
       employer: 'Moonfarmer',
@@ -130,9 +132,8 @@ export default {
       endDate: new Date('2019-01-01'),
       tags: ['Vue', 'Express', 'Docker'],
       description: `
-        High school independent study project designing and developing a web app for computer
-        science students and classrooms that presents a set of original practice problems in a
-        custom online development environment.
+        Independently designed, developed, and launched a full-featured product—an online
+        educational platform for students to learn programming.
       `,
     },
     // {
@@ -152,9 +153,8 @@ export default {
       endDate: new Date('2016-12-31'),
       tags: ['JavaScript', 'Node.js', 'Flask'],
       description: `
-        Web app allowing users to explore the world’s knowledge based on related topics.
-        Leverages Wikipedia API to parse articles and extract “related concepts” from relevant page
-        links in order to build a content graph.
+        Original web app allowing users to explore Wikipedia through linked topics. Conceived,
+        designed, and built a custom front-end and back-end from scratch.
       `,
     },
     // {
@@ -188,30 +188,28 @@ export default {
     {
       title: 'JavaScript',
       description: `
-        Expert-level development skills in web programming with “vanilla” JavaScript as well as with
-        React and Vue.
+        Advanced web development skills; expertise building products with popular frameworks
+        like React and Vue.
       `,
       tags: ['React', 'Next.js', 'Gatsby', 'TypeScript', 'Node'],
     },
     {
       title: 'UI/UX Design',
       description: `
-        Creating interface designs for web apps that are simultaneously beautiful, responsive, and
-        intuitive.
+        Driven to design beautiful and accessible user interfaces that make products easy to use.
       `,
       // prettier-ignore
       tags: [
-        'Sketch', 'Figma', 'CSS layout', 'CSS animation', 'SASS', 'Photoshop', 'Illustrator', 'Affinity',
+        'Sketch', 'Figma', 'CSS layout', 'CSS animation', 'SASS', 'Photoshop', 'Illustrator',
       ],
     },
     {
-      title: 'Programming Languages',
+      title: 'Programming Languages / Technologies',
       // prettier-ignore
-      tags: ['JavaScript', 'Python', 'C', 'C++', 'Java'],
-    },
-    {
-      title: 'Technologies',
-      tags: ['Docker', 'GraphQL', 'Django', 'Express', 'Pandas'],
+      tags: [
+        'JavaScript', 'Python', 'C', 'C++', 'Java', 'Docker', 'GraphQL', 'Django', 'Express',
+        'Pandas',
+      ],
     },
   ],
 
