@@ -1,7 +1,7 @@
 import path from 'path';
 import { promises as fs, existsSync } from 'fs';
 import { promisify } from 'util';
-import glob from 'globby';
+import { globby as glob } from 'globby';
 
 import { srcDir, outDir } from './paths.js';
 
@@ -66,7 +66,7 @@ Promise.all([
   })
   .then(() => process.stdout.write('Capturing PDF and static image... '))
   .then(async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ headless: false });
 
     // Capture US Letter size PDF
     const page = await browser.newPage();
