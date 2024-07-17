@@ -98,12 +98,15 @@
             <article>
               <header>
                 <h3><a href="{{awardItem.href}}">
-                  {{awardItem.projectName}} <span class="icons">{{icon "link"}}</span>
+                  {{awardItem.projectName}}
+                  {{#if awardItem.linkIcon}}
+                    <span class="icons">{{icon "link"}}</span>
+                  {{/if}}
                 </a></h3>
                 <p class="subhead">
                   {{awardItem.institution}}
                   {{#if awardItem.institution}}
-                    {{#if awardItem.date}} | {{/if}}
+                    {{#if awardItem.date }} | {{/if}}
                   {{/if}}
                   {{#if awardItem.date}}
                     {{getDateComponent awardItem.date 'year'}}

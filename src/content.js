@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 const email = 'luke@deentaylor.com';
+const portfolio = 'luke.deentaylor.com';
 
 export default {
   // summary: `
@@ -16,19 +17,33 @@ export default {
   `,
 
   email,
-  portfolio: 'luke.deentaylor.com',
+  portfolio,
 
   experience: [
     {
       employer: 'The Marriage Pact',
-      position: 'Lead Front-End Developer',
-      location: 'Remote',
-      startDate: new Date('2021-07-12'),
+      position: 'Lead Design Engineer',
+      location: 'New York, NY',
+      startDate: new Date('2021-08-31'), // 07/12 is accurate
       tasks: [
-        'Launch custom web apps at high velocity to support a range of viral products targeted at college students.',
+        'Design and build complex front-ends for multiple products, collaborating with back-end developers.',
+        'Lead engineering discussions to develop a robust and scalable architecture for an early-stage startup.',
+        'Contribute significantly to product design and ideation through active discussion, helping develop multiple viral social products.',
+        'Rapidly develop and iterate on new products with changing feature sets.',
+        // 'Designed and created a novel, scalable system for on-demand generation of images, which provides social preview images and personalized email/SMS content and handles over 1000 requests per hour at peak times.',
+        // 'Built a fully new product end to end in the space of a few months, including visual design, branding, database design, front-end development, and back-end development.',
+
+        // 'Build up a collection of multiple integrated web apps, starting from scratch to ',
+        // 'Maintain a large codebase of multiple integrated React web apps.',
+        // 'Serve as a core member of product design and ideation discussions.',
+        // 'Participate centrally in product design and discussions and ideation.',
+        // 'Designed and implemented generative animated visuals and simulations that formed a core part of the visual identity on many sites.',
+        // 'Designed and built a privacy-focused analytics collection system from scratch.',
+        // 'Designed and built a privacy-focused authentication system from scratch.',
+        // 'Launch custom web apps at high velocity to support a range of viral products targeted at college students.',
         // 'Iterate on UX patterns to promote viral growth.',
-        'Target core web vitals to establish best-in-class performance and make web experiences feel native.',
-        'Take leadership within a small team of developers.',
+        // 'Target core web vitals to establish best-in-class performance and make web experiences feel native.',
+        // 'Take leadership within a small team of developers.',
       ],
     },
     {
@@ -41,16 +56,6 @@ export default {
         'Built and launched complex and polished React apps from scratch with great attention to detail.',
         'Focused on animation, performance, and micro-interactions to deliver highly polished products.',
         'Took creative and technical ownership of client projects.',
-      ],
-    },
-    {
-      employer: 'JumboCode',
-      position: 'Head of Engineering',
-      location: 'Tufts University',
-      startDate: new Date('2019-10-01'),
-      tasks: [
-        'Advise and support 80 student developers across seven agile teams.',
-        'Create and lead instructional workshops to teach modern web development.',
       ],
     },
     {
@@ -67,13 +72,24 @@ export default {
       ],
     },
     {
-      employer: 'Tufts University Digital Services',
-      position: 'Developer',
-      location: 'Medford, MA',
-      startDate: new Date('2019-10-07'),
-      endDate: new Date('2021-05-01'),
-      tasks: ['Developed and sent HTML emails with cross-client support to a large audience.'],
+      employer: 'JumboCode',
+      position: 'President',
+      location: 'Tufts University',
+      startDate: new Date('2019-10-01'),
+      endDate: new Date('2023-05-31'),
+      tasks: [
+        'Advise and support over 100 student developers doing pro-bono work to support local nonprofits.',
+        'Create and lead instructional workshops to teach modern web development.',
+      ],
     },
+    // {
+    //   employer: 'Tufts University Digital Services',
+    //   position: 'Developer',
+    //   location: 'Medford, MA',
+    //   startDate: new Date('2019-10-07'),
+    //   endDate: new Date('2021-05-01'),
+    //   tasks: ['Developed and sent HTML emails with cross-client support to a large audience.'],
+    // },
     {
       employer: 'Moonfarmer',
       position: 'Junior Developer',
@@ -81,8 +97,7 @@ export default {
       startDate: new Date('2018-06-20'),
       endDate: new Date('2020-09-01'),
       tasks: [
-        'Built large-scale React apps in a team setting.',
-        'Split time between multiple concurrent agile projects.',
+        'Built large-scale React apps in an agile team.',
         'Wrote extensive documentation and blog posts.',
       ],
     },
@@ -111,16 +126,16 @@ export default {
     {
       institution: 'Tufts University',
       startDate: new Date('2019-08-28'),
-      gpa: '3.98',
+      gpa: '3.99',
       endDate: new Date('2023-05-23'),
       description: 'B.S. Computer Science',
     },
-    {
-      institution: 'New Paltz Central High School',
-      gpa: '99.4',
-      startDate: new Date('2015-09-02'),
-      endDate: new Date('2019-06-26'),
-    },
+    // {
+    //   institution: 'New Paltz Central High School',
+    //   gpa: '99.4',
+    //   startDate: new Date('2015-09-02'),
+    //   endDate: new Date('2019-06-26'),
+    // },
   ],
 
   work: [
@@ -177,11 +192,19 @@ export default {
       date: new Date('2021-10-14'),
       institution: 'Awwwards',
       titles: ['Honorable Mention', 'Mobile Excellence'],
+      linkIcon: true,
     },
     {
       projectName: 'Tau Beta Pi',
+      href: 'https://en.wikipedia.org/wiki/Tau_Beta_Pi',
+      institution: 'Academic honor society |',
       startDate: new Date('2021-10-04'),
+      linkIcon: false,
     },
+    // {
+    //   projectName: 'National Merit Scholarship',
+    //   startDate: new Date('2019-01-01'),
+    // },
   ],
 
   skills: [
@@ -191,30 +214,29 @@ export default {
         Advanced web development skills; expertise building products with popular frameworks
         like React and Vue.
       `,
-      tags: ['React', 'Next.js', 'Gatsby', 'TypeScript', 'Node'],
+      tags: ['React', 'Next.js', 'TypeScript', 'Node', 'WebGL'],
     },
     {
-      title: 'UI/UX Design',
+      title: 'Product Design',
       description: `
         Driven to design beautiful and accessible user interfaces that make products easy to use.
       `,
       // prettier-ignore
       tags: [
-        'Sketch', 'Figma', 'CSS layout', 'CSS animation', 'SASS', 'Photoshop', 'Illustrator',
+        'Figma', 'Sketch', 'CSS layout', 'CSS animation', 'SASS', 'Photoshop', 'Illustrator', 'UI', 'UX',
       ],
     },
     {
       title: 'Programming Languages / Technologies',
       // prettier-ignore
       tags: [
-        'JavaScript', 'Python', 'C', 'C++', 'Java', 'Docker', 'GraphQL', 'Django', 'Express',
-        'Pandas',
+        'JavaScript', 'TypeScript', 'Python', 'C', 'C++', 'Docker', 'OpenGL', 'Numpy', 'Pandas', 'Git',
       ],
     },
   ],
 
   links: [
-    'luke.deentaylor.com',
+    portfolio,
     'github.com/controversial',
     // 'dribbble.com/controversial',
     'linkedin.com/in/lukedeentaylor',
