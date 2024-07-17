@@ -5,7 +5,7 @@ import { globby as glob } from 'globby';
 
 import { srcDir, outDir } from './paths.js';
 
-import sass from 'sass';
+import * as sass from 'sass';
 import Handlebars from 'handlebars';
 import './handlebars-helpers/index.js';
 
