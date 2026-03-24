@@ -21,15 +21,29 @@ export default {
 
   experience: [
     {
-      employer: 'The Marriage Pact',
-      position: 'Lead Design Engineer',
+      employer: 'Stainless',
+      position: 'Product Engineer',
       location: 'New York, NY',
-      startDate: new Date('2021-08-31'), // 07/12 is accurate
+      startDate: new Date('2025-09-09'),
       tasks: [
-        'Design and build complex front-ends for multiple products, collaborating with back-end developers.',
-        'Lead engineering discussions to develop a robust and scalable architecture for an early-stage startup.',
-        'Contribute significantly to product design and ideation through active discussion, helping develop multiple viral social products.',
-        'Rapidly develop and iterate on new products with changing feature sets.',
+        'Developed design system for <a href="https://stainless.com/docs-platform" target="_blank" rel="noopener noreferrer">Stainless Docs</a>, which powers API reference for Anthropic, Cloudflare, etc.',
+        'Supported a diverse set of technical customers, triaging issues, and designing and developing features to support customer needs.',
+      ],
+    },
+    {
+      employer: 'The Marriage Pact',
+      position: 'Founding Design Engineer',
+      location: 'New York',
+      startDate: new Date('2021-08-31'), // 07/12 is accurate
+      endDate: new Date('2025-09-04'),
+      tasks: [
+        'Led design engineering at an early stage startup, building several consumer social products for a college audience.',
+        'Built the company’s first revenue-generating product, scaling revenue from 0 to over $100k/yr',
+        'Designed and built complex front-ends and back-end services to serve hundreds of thousands of users across multiple products.',
+        'Developed boundary-pushing web visuals with WebGL, CSS, and custom animation systems.',
+        // 'Led engineering discussions to develop a robust and scalable architecture for an early-stage startup.',
+        // 'Contributed significantly to product design and ideation through active discussion, helping develop multiple viral social products.',
+        // 'Rapidly develop and iterate on new products with changing feature sets.',
         // 'Designed and created a novel, scalable system for on-demand generation of images, which provides social preview images and personalized email/SMS content and handles over 1000 requests per hour at peak times.',
         // 'Built a fully new product end to end in the space of a few months, including visual design, branding, database design, front-end development, and back-end development.',
 
@@ -67,7 +81,7 @@ export default {
       tasks: [
         'Maintained and expanded <a href="https://coronavirus.jhu.edu" target="_blank" rel="noopener noreferrer">coronavirus.jhu.edu</a>, a critical, high-traffic public health resource.',
         'Created rich visual data displays cited daily by The Washington Post, NPR, and others.',
-        'Led effort to centralize data processing; created data science toolkit upon which the site’s primary engagements are built.',
+        'Led effort to centralize data processing; created a novel science toolkit underpinning the data pipelines.',
         'Oversaw and led development on a full site redesign.',
       ],
     },
@@ -78,8 +92,8 @@ export default {
       startDate: new Date('2019-10-01'),
       endDate: new Date('2023-05-31'),
       tasks: [
-        'Advise and support over 100 student developers doing pro-bono work to support local nonprofits.',
-        'Create and lead instructional workshops to teach modern web development.',
+        'Advised and supported over 100 student developers doing pro-bono work to support local nonprofits.',
+        'Developed and led instructional workshops to teach modern web development.',
       ],
     },
     // {
@@ -112,14 +126,14 @@ export default {
     //     'Volunteered teaching basic programming skills to underserved elementary school students.',
     //   ],
     // },
-    {
-      employer: 'AppMobi Inc.',
-      position: 'Summer Intern',
-      location: 'Poughkeepsie, NY',
-      startDate: new Date('2016-06-21'),
-      endDate: new Date('2016-08-30'),
-      tasks: ['Built and deployed mobile apps using Angular.js.'],
-    },
+    // {
+    //   employer: 'AppMobi Inc.',
+    //   position: 'Summer Intern',
+    //   location: 'Poughkeepsie, NY',
+    //   startDate: new Date('2016-06-21'),
+    //   endDate: new Date('2016-08-30'),
+    //   tasks: ['Built and deployed mobile apps using Angular.js.'],
+    // },
   ],
 
   education: [
