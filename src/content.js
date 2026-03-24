@@ -37,10 +37,10 @@ export default {
       startDate: new Date('2021-08-31'), // 07/12 is accurate
       endDate: new Date('2025-09-04'),
       tasks: [
-        'Led design engineering at an early stage startup, building several consumer social products for a college audience.',
-        'Built the company’s first revenue-generating product, scaling revenue from 0 to over $100k/yr',
+        'Led design engineering at an early stage startup, building several consumer social products.',
+        'Built the company’s first revenue-generating product, scaling revenue from 0 to over $100k/yr.',
         'Designed and built complex front-ends and back-end services to serve hundreds of thousands of users across multiple products.',
-        'Developed boundary-pushing web visuals with WebGL, CSS, and custom animation systems.',
+        'Designed and built complex web visuals with WebGL, CSS, and custom animation systems.',
         // 'Led engineering discussions to develop a robust and scalable architecture for an early-stage startup.',
         // 'Contributed significantly to product design and ideation through active discussion, helping develop multiple viral social products.',
         // 'Rapidly develop and iterate on new products with changing feature sets.',
@@ -112,7 +112,7 @@ export default {
       endDate: new Date('2020-09-01'),
       tasks: [
         'Built large-scale React apps in an agile team.',
-        'Wrote extensive documentation and blog posts.',
+        // 'Wrote extensive documentation and blog posts.',
       ],
     },
     // {
@@ -225,26 +225,26 @@ export default {
     {
       title: 'JavaScript',
       description: `
-        Advanced web development skills; expertise building products with popular frameworks
-        like React and Vue.
+        Advanced web development skills; expertise building products with frameworks
+        like Next.js, React, Astro.
       `,
-      tags: ['React', 'Next.js', 'TypeScript', 'Node', 'WebGL'],
+      tags: ['React', 'Next.js', 'Astro', 'TypeScript', 'WebGL'],
     },
     {
       title: 'Product Design',
-      description: `
-        Driven to design beautiful and accessible user interfaces that make products easy to use.
-      `,
+      // description: `
+      //   Driven to design beautiful and accessible user interfaces that make products easy to use.
+      // `,
       // prettier-ignore
       tags: [
-        'Figma', 'Sketch', 'CSS layout', 'CSS animation', 'SASS', 'Photoshop', 'Illustrator', 'UI', 'UX',
+        'Figma', 'Sketch', 'CSS layout', 'CSS animation', 'SASS', 'UI', 'UX',
       ],
     },
     {
       title: 'Programming Languages / Technologies',
       // prettier-ignore
       tags: [
-        'JavaScript', 'TypeScript', 'Python', 'C', 'C++', 'Docker', 'OpenGL', 'Numpy', 'Pandas', 'Git',
+        'TypeScript', 'Python', 'C', 'C++', 'Docker', 'OpenGL', 'Numpy', 'Pandas', 'Git',
       ],
     },
   ],
