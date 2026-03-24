@@ -3,7 +3,7 @@
 import content from './content.js';
 
 test('All content keys are present', () => {
-  const expectedKeys = ['about', 'email', 'portfolio', 'experience', 'work', 'education', 'skills', 'links'];
+  const expectedKeys = ['about', 'awards', 'email', 'portfolio', 'experience', 'work', 'education', 'skills', 'links'];
   expect(Object.keys(content).sort()).toEqual(expectedKeys.sort());
 });
 

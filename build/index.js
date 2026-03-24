@@ -1,6 +1,5 @@
 import path from 'path';
 import { promises as fs, existsSync } from 'fs';
-import { promisify } from 'util';
 import { globby as glob } from 'globby';
 
 import { srcDir, outDir } from './paths.js';
@@ -27,7 +26,7 @@ Promise.all([
     return templateFunc(content);
   })(),
   // b) Compile SASS
-  promisify(sass.render)({ file: path.join(srcDir, 'styles.scss') }),
+  sass.compile(path.join(srcDir, 'styles.scss')),
   // c) Get supporting files
   glob('**/*.svg', { cwd: srcDir, onlyFiles: true }),
 ])
@@ -35,7 +34,11 @@ Promise.all([
 // 2) Clean old build
 
   .then(async (values) => {
-    await fs.rm(outDir, { recursive: true });
+    try {
+      await fs.rm(outDir, { recursive: true });
+    } catch {
+      // no old build to clean; this is fine
+    }
     await fs.mkdir(outDir);
     return values;
   })
